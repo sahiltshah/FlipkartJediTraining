@@ -1,5 +1,5 @@
 # FlipkartJEDITraining
-Repository  for Company Training Work
+Repository  for Company Training Work.
 
 [Student activity](https://lucid.app/lucidchart/82557944-da7b-4498-aca6-c74462708f2c/edit?beaconFlowId=41C2EBF024F74669&page=0_0#)
 
