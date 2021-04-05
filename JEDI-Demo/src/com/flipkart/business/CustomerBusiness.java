@@ -2,39 +2,44 @@
 package com.flipkart.business;
 
 import com.flipkart.bean.Customer;
+import org.apache.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+
 
 public class CustomerBusiness {
 
 
 
 
-        Customer myCustomers[] = new Customer[] {new Customer(), new Customer(), new Customer()};
+        //Customer myCustomers[] = new Customer[] {new Customer(), new Customer(), new Customer()};
+        List<Customer> myCustomers = new ArrayList<Customer>(3);
 
+        private static Logger logger = Logger.getLogger(CustomerBusiness.class);
 
         // craete customer methods
         public void createCustomer(){
 
             System.out.println("create Customer Methods-->");
-
             // First Recod Insert
-            myCustomers[0].setCustId(101);
-            myCustomers[0].setCustName("Training");
-            myCustomers[0].setCustAddress("IBM");
+            myCustomers.get(0).setCustId(101);
+            myCustomers.get(0).setCustName("Training");
+            myCustomers.get(0).setCustAddress("IBM");
 
             // Second Recod Insert
 
-            myCustomers[1].setCustId(102);
-            myCustomers[1].setCustName("Lecture");
-            myCustomers[1].setCustAddress("3i-Infotech");
+            myCustomers.get(1).setCustId(102);
+            myCustomers.get(1).setCustName("Lecture");
+            myCustomers.get(1).setCustAddress("3i-Infotech");
 
 
             // third Record
 
-            myCustomers[2].setCustId(103);
-            myCustomers[2].setCustName("Lecture1");
-            myCustomers[2].setCustAddress("3i-Infotech ABC");
+            myCustomers.get(2).setCustId(103);
+            myCustomers.get(2).setCustName("Lecture1");
+            myCustomers.get(2).setCustAddress("3i-Infotech ABC");
 
         }
 
@@ -45,10 +50,8 @@ public class CustomerBusiness {
             System.out.println("list of Customers");
 
             // Also note that we have given i < 4 and not i < 5 - I ll explain Why.
-            for (int i = 0; i < myCustomers.length; i++) {
-
-                System.out.println("The id of " + i + " Customer ID is :" + myCustomers[i].getCustId() + " and name is : " +  myCustomers[i].getCustName() + "" + myCustomers[i].getCustAddress());
-
+            for(Customer value : myCustomers){
+                logger.info(" Customer ID is :" + value.getCustId() + " and name is : " +  value.getCustName() + "" + value.getCustAddress());
             }
 
         }
@@ -64,11 +67,11 @@ public class CustomerBusiness {
             System.out.println("Enter index to be updated: ");
 
             int index = myObj.nextInt();  // Read user input
-            if(index < myCustomers.length){
+            if(index < myCustomers.size()){
                 System.out.println("Enter the new name: ");
-                myCustomers[index].setCustName(myObj.nextLine());
+                myCustomers.get(index).setCustName(myObj.nextLine());
                 System.out.println("Enter the new address: ");
-                myCustomers[index].setCustAddress(myObj.nextLine());
+                myCustomers.get(index).setCustAddress(myObj.nextLine());
             }
 
 
@@ -82,11 +85,7 @@ public class CustomerBusiness {
             Scanner myObj = new Scanner(System.in);  // Create a Scanner object
             System.out.println("Enter customer index to be deleted: ");
             int index = myObj.nextInt();  // Read user input
-            if(index < myCustomers.length){
-                myCustomers[index].setCustId(-1);
-                myCustomers[index].setCustName("");
-                myCustomers[index].setCustAddress("");
-            }
+            myCustomers.remove(index);
 
 
         }
