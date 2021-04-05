@@ -2,14 +2,14 @@ package com.flipkart.bean;
 
 public class Transaction {
     private Integer studentIndex;
-    private float Amount;
-    private Integer TransactionID;
+    private float amount;
+    private Integer transactionID;
 
 
     public Transaction(int studentIndex, float amount, int transactionID) {
         this.studentIndex = studentIndex;
-        Amount = amount;
-        TransactionID = transactionID;
+        this.amount = amount;
+        this.transactionID = transactionID;
     }
 
     public Integer getStudentIndex() {
@@ -21,18 +21,18 @@ public class Transaction {
     }
 
     public float getAmount() {
-        return Amount;
+        return amount;
     }
 
     public void setAmount(float amount) {
-        Amount = amount;
+        this.amount = amount;
     }
 
     public int getTransactionID() {
-        return TransactionID;
+        return transactionID;
     }
 
     public void setTransactionID(int transactionID) {
-        TransactionID = transactionID;
+        this.transactionID = transactionID;
     }
 }

@@ -1,7 +1,7 @@
 package com.flipkart.validator;
 import com.flipkart.Exception.AuthenticationException.InvalidLoginInputException;
 import com.flipkart.bean.SpecialUser;
-import com.flipkart.dao.LoginAuthDB;
+import com.flipkart.dao.oldDAO.LoginAuthDB;
 public class  AuthenticationValidator {
     public static SpecialUser authenticate(String username, String password){
         SpecialUser specialUser = new SpecialUser();

@@ -1,7 +1,6 @@
 package com.flipkart.validator;
 
 import com.flipkart.bean.Professor;
-import com.flipkart.bean.Student;
 import com.flipkart.bean.Course;
 
 public class helperInterface {
@@ -14,10 +13,8 @@ public class helperInterface {
         boolean checkAnyCourseToTeachPossible(Professor p, Course course);
         boolean checkProfNoMoreTeachCoursePossible(Professor p, Course course);
 
-        //feasibility
 
-        boolean checkCourseExists(Course course);
-
+        Course checkCourseExists(int courseId);
 
         float getSubjectCost(Course course);
 

@@ -4,7 +4,7 @@ package com.flipkart.handler;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
 import com.flipkart.service.CourseCatalogSystem;
-import com.flipkart.temporaryDB.DB;
+import com.flipkart.temporaryDB.OldDB;
 
 import static com.flipkart.utils.ScannerInput.input_obj;
 
@@ -43,14 +43,14 @@ public class AdminHandler {
         int choice;
         System.out.println("Printing all the names that have tried to register. if acceptable, enter 1 else enter 0: ");
 
-        for (Student student : DB.admin.studentsBuffer ){
+        for (Student student : OldDB.admin.studentsBuffer ){
             System.out.println(student.getName());
             choice=input_obj.nextInt();
             if(choice==1){
-                student.setRollNumber(DB.globalRollNumber++);
+                student.setRollNumber(OldDB.globalRollNumber++);
             }
             else
-                DB.admin.studentsBuffer.remove(student);
+                OldDB.admin.studentsBuffer.remove(student);
 
         }
 

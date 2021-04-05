@@ -3,13 +3,17 @@ package com.flipkart.validator;
 import com.flipkart.Exception.ProfessorException.CantAbandonSubjectException;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Course;
-import com.flipkart.temporaryDB.DB;
+import com.flipkart.dao.DB;
+import com.flipkart.temporaryDB.OldDB;
+
+import java.util.ArrayList;
+
 //all modules !complete
 public class CourseCatalogValidator implements helperInterface.CourseValidatorFunctions {
 
     @Override
     public boolean checkSpecifcCourseStudyPossible(Course course) {
-        for(Course x : DB.courses){
+        for(Course x : OldDB.courses){
             if(x.equals(course))
             {
                 if(course.getcourseStrength()>=3 && course.getcourseStrength()<10)
@@ -23,7 +27,7 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
 
     @Override
     public boolean checkSpecificCourseTeachPossible(Course course) {
-        for(Course x : DB.courses){
+        for(Course x : OldDB.courses){
             if(x.equals(course))
             {
                 if(x.getcourseStrength()>3)
@@ -37,7 +41,7 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
 
     @Override
     public boolean checkAnyCourseToTeachPossible(Professor p, Course course) {
-        for(Course x: DB.courses)
+        for(Course x: OldDB.courses)
             if(x.equals(course))
             {
                 if(x.getFacultyId()==-1)
@@ -51,7 +55,7 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
     @Override
     public boolean checkProfNoMoreTeachCoursePossible(Professor p, Course course) {
         try {
-            for(Course x: DB.courses)
+            for(Course x: OldDB.courses)
                 if(x.equals(course))
                 {
                     if(x.getcourseStrength()==0)
@@ -69,20 +73,19 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
     }
 
 
-
     @Override
-    public boolean checkCourseExists(Course course) {
-        for(Course x : DB.courses){
-            if(x.equals(course))
-                return true;
-        }
-        return false;
+    public Course checkCourseExists(int courseId) {
+        ArrayList<Course> courses = DB.getAllCourses();
+        for(Course course : courses)
+            if(course.getcourseId()==courseId)
+                return course;
+        return new Course("",-1,-1,-1,-1);
     }
 
 
     @Override
     public float getSubjectCost(Course course) {
-        for(Course x: DB.courses)
+        for(Course x: OldDB.courses)
             if(x.equals(course))
             {
                 return x.getcourseCost();

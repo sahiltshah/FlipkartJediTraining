@@ -1,7 +1,8 @@
 package com.flipkart.utils;
 
 import com.flipkart.bean.SpecialUser;
-import com.flipkart.temporaryDB.DB;
+import com.flipkart.dao.DB;
+import com.flipkart.temporaryDB.OldDB;
 
 public class Initializer {
     //adding debit card details
@@ -9,9 +10,11 @@ public class Initializer {
     public void initialize(){
         SpecialUser specialUser=new SpecialUser();
         specialUser.type=1;
-        specialUser.row=0;
-        DB.loginMap.put("sahil",specialUser);
-        DB.loginDetails.put("sahil","sahil");
+        specialUser.id =0;
+        OldDB.loginMap.put("sahil",specialUser);
+        OldDB.loginDetails.put("sahil","sahil");
+
+        DB.makeConnection();
     }
 
 

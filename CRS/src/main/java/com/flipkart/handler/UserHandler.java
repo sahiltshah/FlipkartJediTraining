@@ -2,7 +2,7 @@ package com.flipkart.handler;
 
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.service.UserModificationSystem;
-import com.flipkart.bean.User;
+
 import static com.flipkart.utils.ScannerInput.input_obj;
 
 public class UserHandler {
@@ -29,7 +29,7 @@ public class UserHandler {
                                     adminHandler.adminMenu();
                                     break;
                             case 1: StudentHandler studentHandler=new StudentHandler();
-                                    studentHandler.studentMenu(specialUser.row);
+                                    studentHandler.studentMenu(specialUser.id);
                                     break;
                             case 2: ProfessorHandler professorHandler=new ProfessorHandler();
                                     professorHandler.professorMenu();

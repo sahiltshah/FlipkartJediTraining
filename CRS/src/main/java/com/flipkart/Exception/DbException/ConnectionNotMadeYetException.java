@@ -1,2 +1,4 @@
-package com.flipkart.Exception.DbException;public class ConnectionNotMadeYetException {
+package com.flipkart.Exception.DbException;
+
+public class ConnectionNotMadeYetException extends Exception{
 }

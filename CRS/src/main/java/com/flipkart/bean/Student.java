@@ -8,9 +8,7 @@ public class Student extends User{ //extends User implements StudentFunctions
 
     Integer rollNumber;
     Integer currentSubjectCount;
-
-
-
+    public ArrayList<Integer> subjectPreferences;
 
 
     public Integer getRollNumber() {
@@ -21,7 +19,6 @@ public class Student extends User{ //extends User implements StudentFunctions
         return subjectPreferences;
     }
 
-    public ArrayList<Integer> subjectPreferences;
 
     public Integer getCurrentSubjectCount() {
         return currentSubjectCount;

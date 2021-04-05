@@ -7,8 +7,12 @@ import com.flipkart.bean.Professor;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.bean.Student;
 
-import static com.flipkart.temporaryDB.DB.loginDetails;
-import static com.flipkart.temporaryDB.DB.loginMap;
+import java.util.ArrayList;
+
+import static com.flipkart.dao.DB.loginAccess;
+import static com.flipkart.dao.DB.loginMapAccess;
+import static com.flipkart.temporaryDB.OldDB.loginDetails;
+import static com.flipkart.temporaryDB.OldDB.loginMap;
 
 public class LoginAuthDB implements daoInterface.LoginFunctionsDB {
 
@@ -16,22 +20,24 @@ public class LoginAuthDB implements daoInterface.LoginFunctionsDB {
     public SpecialUser login(String username, String password) {
         SpecialUser specialUser=new SpecialUser();
         try {
-            if(loginDetails.containsKey(username))
+
+            ArrayList<String> ans = loginAccess(username);
+            if(ans.size()!=0)
             {
-                if(loginDetails.get(username).equals(password)){
-
-                    if(loginMap.containsKey(username)){
-                        return loginMap.get(username);
-                    }
-                    else
+                if(ans.get(0).equals(password)){
+                    System.out.println("Authentication valid");
+                    ArrayList<SpecialUser> specialUsers = loginMapAccess(username);
+                    if(specialUsers.size()==0)
                         throw new UserIDMapDoesNotExist();
+                    else
+                        return specialUsers.get(0);
                 }
-
                 else
                     throw new WrongPasswordException();
             }
-            else
-                throw new UserDoesNotExistException();
+            else throw new UserDoesNotExistException();
+
+
         }
 
         catch (UserDoesNotExistException e) {
@@ -40,7 +46,6 @@ public class LoginAuthDB implements daoInterface.LoginFunctionsDB {
             System.out.println("You enterred the wrong password! Try again");
         } catch (UserIDMapDoesNotExist userIDMapDoesNotExist) {
             userIDMapDoesNotExist.printStackTrace();
-            System.out.println("The login details seem valid but the corresponding mapped record is not found");
         }
         return specialUser;
     }

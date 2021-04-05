@@ -9,7 +9,7 @@ import com.flipkart.bean.Course;
 
 import java.util.ArrayList;
 
-import static com.flipkart.temporaryDB.DB.*;
+import static com.flipkart.temporaryDB.OldDB.*;
 
 public class CourseCatalogDB implements daoInterface.CourseCatalogDBFunctions {
 
@@ -29,12 +29,12 @@ public class CourseCatalogDB implements daoInterface.CourseCatalogDBFunctions {
     @Override
     public boolean selectStudyCourse(CourseMap courseMap) {
         try{
-            if(courseMap.course_index < 0 || courseMap.course_index >= courses.size())
+            if(courseMap.courseId < 0 || courseMap.courseId >= courses.size())
                 throw new CourseIndexInvalidException();
-            if(courseMap.student_index < 0 || courseMap.student_index >= students.size())
+            if(courseMap.studentId < 0 || courseMap.studentId >= students.size())
                 throw new StudentIndexInvalidException();
-            students.get(courseMap.student_index).setCurrentSubjectCount(students.get(courseMap.student_index).getCurrentSubjectCount()+1);
-            courses.get(courseMap.course_index).setcourseStrength(courses.get(courseMap.course_index).getcourseStrength()+1);
+            students.get(courseMap.studentId).setCurrentSubjectCount(students.get(courseMap.studentId).getCurrentSubjectCount()+1);
+            courses.get(courseMap.courseId).setcourseStrength(courses.get(courseMap.courseId).getcourseStrength()+1);
 
             courseMaps.add(courseMap);
             System.out.println("Course added successfully");
@@ -52,12 +52,12 @@ public class CourseCatalogDB implements daoInterface.CourseCatalogDBFunctions {
     public boolean deleteStudyCourse(CourseMap courseMap) {
 
         try{
-            if(courseMap.course_index < 0 || courseMap.course_index >= courses.size())
+            if(courseMap.courseId < 0 || courseMap.courseId >= courses.size())
                 throw new CourseIndexInvalidException();
-            if(courseMap.student_index < 0 || courseMap.student_index >= students.size())
+            if(courseMap.studentId < 0 || courseMap.studentId >= students.size())
                 throw new StudentIndexInvalidException();
-            students.get(courseMap.student_index).setCurrentSubjectCount(students.get(courseMap.student_index).getCurrentSubjectCount()+1);
-            courses.get(courseMap.course_index).setcourseStrength(courses.get(courseMap.course_index).getcourseStrength()+1);
+            students.get(courseMap.studentId).setCurrentSubjectCount(students.get(courseMap.studentId).getCurrentSubjectCount()+1);
+            courses.get(courseMap.courseId).setcourseStrength(courses.get(courseMap.courseId).getcourseStrength()+1);
             int courseMapIndex =-1;
             for(int i=0;i<courseMaps.size();i++)
                 if(courseMaps.get(i).equals(courseMap)) {
@@ -67,8 +67,6 @@ public class CourseCatalogDB implements daoInterface.CourseCatalogDBFunctions {
 
             if(courseMapIndex == -1)
                 throw new CourseMapNeverExisted();
-
-            courseMaps.get(courseMapIndex).valid = -1;
 
             System.out.println("Course removed successfully");
             return true;
@@ -127,11 +125,11 @@ public class CourseCatalogDB implements daoInterface.CourseCatalogDBFunctions {
     @Override
     public boolean addCoursePreference(CourseMap courseMap) {
         try{
-            if(courseMap.course_index < 0 || courseMap.course_index >= courses.size())
+            if(courseMap.courseId < 0 || courseMap.courseId >= courses.size())
                 throw new CourseIndexInvalidException();
-            if(courseMap.student_index < 0 || courseMap.student_index >= students.size())
+            if(courseMap.studentId < 0 || courseMap.studentId >= students.size())
                 throw new StudentIndexInvalidException();
-            students.get(courseMap.student_index).subjectPreferences.add(courses.get(courseMap.course_index).getcourseId());
+            students.get(courseMap.studentId).subjectPreferences.add(courses.get(courseMap.courseId).getcourseId());
             return true;
         } catch (StudentIndexInvalidException e) {
             e.printStackTrace();
@@ -146,8 +144,8 @@ public class CourseCatalogDB implements daoInterface.CourseCatalogDBFunctions {
     public ArrayList<Course> getStudentCourses(int student_index) {
         ArrayList<Course> returnCourses = new ArrayList<Course>();
         for(CourseMap courseMap : courseMaps){
-            if(courseMap.student_index==student_index){
-                returnCourses.add(courses.get(courseMap.course_index));
+            if(courseMap.studentId ==student_index){
+                returnCourses.add(courses.get(courseMap.courseId));
             }
         }
         return returnCourses;

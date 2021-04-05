@@ -7,6 +7,18 @@ public class Course {
     float courseCost;
     Integer facultyId;
 
+    public Course(String courseName, int courseId, int courseStrength, float courseCost, int facultyId) {
+        this.courseCost=courseCost;
+        this.courseId=courseId;
+        this.courseName=courseName;
+        this.courseStrength=courseStrength;
+        this.facultyId=facultyId;
+    }
+
+    public Course(){
+        this.courseId=-1;
+    }
+
     public Integer getFacultyId() {
         return facultyId;
     }
@@ -45,6 +57,9 @@ public class Course {
 
     public void setcourseStrength(int courseStrength) {
         this.courseStrength = courseStrength;
+    }
+    public void printCourse(){
+        System.out.println(this.courseId + " | " + this.courseName + " | " + this.courseStrength + " | " + this.courseCost);
     }
 
 

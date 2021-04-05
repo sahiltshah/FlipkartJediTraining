@@ -4,7 +4,7 @@ import com.flipkart.Exception.StudentException.StudentIndexInvalidException;
 import com.flipkart.Exception.StudentException.UnapprovedStudentException;
 import com.flipkart.bean.Student;
 
-import static com.flipkart.temporaryDB.DB.*;
+import static com.flipkart.temporaryDB.OldDB.*;
 
 public class StudentValidator implements helperInterface.StudentValidatorFunctions {
 

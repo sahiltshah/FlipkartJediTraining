@@ -5,7 +5,7 @@ import com.flipkart.bean.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class DB {
+public class OldDB {
     //temporary DB equivalent tables
     public static ArrayList<Student> students = new ArrayList<Student>();
     public static ArrayList<Professor> professors = new ArrayList<>();

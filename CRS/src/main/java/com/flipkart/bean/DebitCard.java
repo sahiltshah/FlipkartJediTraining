@@ -4,8 +4,12 @@ public class DebitCard {
 
     private String cardNumber;
     private Integer cvv;
-    private String Name;
+    private String name;
     private float balance;
+
+    public DebitCard(String s) {
+        this.cardNumber=s;
+    }
 
     public String getCardNumber() {
         return cardNumber;
@@ -24,11 +28,11 @@ public class DebitCard {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public float getBalance() {
@@ -38,4 +42,5 @@ public class DebitCard {
     public void setBalance(float balance) {
         this.balance = balance;
     }
+
 }

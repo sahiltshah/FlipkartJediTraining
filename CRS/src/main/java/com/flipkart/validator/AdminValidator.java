@@ -1,7 +1,7 @@
 package com.flipkart.validator;
 
 import com.flipkart.bean.Student;
-import com.flipkart.dao.LoginAuthDB;
+import com.flipkart.dao.oldDAO.LoginAuthDB;
 
 public class AdminValidator {
 

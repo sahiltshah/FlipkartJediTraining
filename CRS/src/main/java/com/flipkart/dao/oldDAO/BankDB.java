@@ -4,7 +4,7 @@ import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Transaction;
 
 
-import static com.flipkart.temporaryDB.DB.debitCards;
+import static com.flipkart.temporaryDB.OldDB.debitCards;
 //modules complete
 public class BankDB implements daoInterface.BankFunctions {
     @Override

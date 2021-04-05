@@ -1,13 +1,12 @@
 package com.flipkart.bean;
 
 public class CourseMap {
-    public Integer student_index;
-    public Integer course_index;
+    public Integer studentId;
+    public Integer courseId;
 
-    public CourseMap() {
-        this.valid = 1;
+    public CourseMap(int studentId, int courseId) {
+        this.studentId=studentId;
+        this.courseId=courseId;
     }
-
-    public int valid;
 
 }

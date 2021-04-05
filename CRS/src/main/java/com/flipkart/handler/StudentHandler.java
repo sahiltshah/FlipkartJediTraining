@@ -9,35 +9,43 @@ import com.flipkart.utils.DebitCardInput;
 import static com.flipkart.utils.ScannerInput.input_obj;
 
 public class StudentHandler {
-    public void studentMenu(int student_index) {
+    public void studentMenu(int studentId) {
         boolean getOutOfThisMenu = true;
         int choice;
         while (getOutOfThisMenu) {
             System.out.println("Enter: \n" +
                     "1 to put in subject preferences\n" +
-                    "2 to add or remove courses post allotment/starting of courses\n" +
-                    "3 to pay bills if any amount is pending\n" +
-                    "4 to check grades if results declared and \n" +
+                    "2 to add course post allotment/starting of courses\n" +
+                    "3 to remove a course post allotment/starting of course\n" +
+                    "4 to pay bills if any amount is pending\n" +
+                    "5 to check grades if results declared and \n" +
                     "0 to logout and go to portal menu");
             choice = input_obj.nextInt();
+            CourseCatalogSystem courseCatalogSystem = new CourseCatalogSystem();
 
             switch (choice) {
                 case 1:
-                    CourseCatalogSystem courseCatalogSystem = new CourseCatalogSystem();
-                    courseCatalogSystem.addCoursePreferences(student_index);
+
+                    courseCatalogSystem.addCoursePreferences(studentId);
                     break;
                 case 2:
-
+                    courseCatalogSystem.showAllCourses();
+                    courseCatalogSystem.addLateralCourse(studentId);
                     break;
                 case 3:
+                    courseCatalogSystem.showStudentCourses(studentId);
+                    courseCatalogSystem.dropLateralCourse(studentId);
+                    break;
+
+                case 4:
                     AccountingSystem accountingSystem = new AccountingSystem();
-                    float amount =  accountingSystem.calculateBill(student_index);
+                    float amount =  accountingSystem.calculateBill(studentId);
                     System.out.println("The total bill incurred is: " + amount);
                     System.out.println("Enter the card details to pay: ");
-                    DebitCard studentDebitCard = DebitCardInput.DebitCardInputFunction();
-                    accountingSystem.makeTransaction(student_index,studentDebitCard,amount);
+                    DebitCard studentDebitCard = DebitCardInput.DebitCardStudentInputFunction();
+                    accountingSystem.makeTransaction(studentId,studentDebitCard,amount);
                     break;
-                case 4:
+                case 5:
                     break;
                 case 0:
                     getOutOfThisMenu = false;
