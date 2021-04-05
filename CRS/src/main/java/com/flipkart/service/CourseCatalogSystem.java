@@ -84,6 +84,8 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
                 if(course.getcourseStrength()<10){
                     CourseMap courseMap = new CourseMap(studentId,courseId);
                     DB.addCourseMap(courseMap);
+                    course.setcourseStrength(course.getcourseStrength()+1);
+                    DB.modifyCourseCount(course);
                 }
                 else throw new CourseAlreadyFullException();
             }

@@ -1,23 +1,46 @@
 package com.flipkart.bean;
 
+import java.time.LocalDateTime;
+
 public class Transaction {
-    private Integer studentIndex;
+    private Integer studentId;
     private float amount;
     private Integer transactionID;
 
+    public void setStudentId(Integer studentId) {
+        this.studentId = studentId;
+    }
 
-    public Transaction(int studentIndex, float amount, int transactionID) {
-        this.studentIndex = studentIndex;
-        this.amount = amount;
+    public void setTransactionID(Integer transactionID) {
         this.transactionID = transactionID;
     }
 
-    public Integer getStudentIndex() {
-        return studentIndex;
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    private String timestamp;
+
+
+    public Transaction(int studentId, float amount, int transactionID) {
+        this.studentId = studentId;
+        this.amount = amount;
+        this.transactionID = transactionID;
+        this.timestamp = String.valueOf(LocalDateTime.now());
+        System.out.println("Time stamp: "+timestamp);
+
+    }
+
+    public Integer getStudentId() {
+        return studentId;
     }
 
     public void setStudent(Integer studentIndex) {
-        this.studentIndex = studentIndex;
+        this.studentId = studentIndex;
     }
 
     public float getAmount() {

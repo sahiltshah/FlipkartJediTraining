@@ -1,5 +1,7 @@
 package com.flipkart.bean;
 
-public enum Grade {
-    A,B,C,D,E;
+public class Grade {
+    public int studentId;
+    public int courseId;
+    public char grade;
 }

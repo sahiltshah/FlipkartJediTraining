@@ -1,15 +1,11 @@
 package com.flipkart.dao;
 
-import com.flipkart.Exception.BankingException.DebitCardInvalid;
 import com.flipkart.Exception.DbException.ConnectionNotMadeYetException;
 
 import java.sql.*;
 import java.util.ArrayList;
 
-import com.flipkart.bean.Course;
-import com.flipkart.bean.CourseMap;
-import com.flipkart.bean.DebitCard;
-import com.flipkart.bean.SpecialUser;
+import com.flipkart.bean.*;
 
 public class DB {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
@@ -22,6 +18,7 @@ public class DB {
 
 
     public static void makeConnection() {
+        System.out.println("make connection method");
         try {
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Connecting to database...");
@@ -37,6 +34,7 @@ public class DB {
     }
 
     public static void closeConnection() {
+        System.out.println("close connection method");
         try {
             conn.close();
         } catch (SQLException throwables) {
@@ -139,6 +137,7 @@ public class DB {
     }
 
     public static ArrayList<String> loginAccess(String username) {
+        System.out.println("LoginAccess method");
         PreparedStatement stmt = null;
         ArrayList<String> ans = new ArrayList<>();
         try {
@@ -170,6 +169,7 @@ public class DB {
     }
 
     public static ArrayList<SpecialUser> loginMapAccess(String username) {
+        System.out.println("Login Map access method");
         PreparedStatement stmt = null;
         ArrayList<SpecialUser> ans = new ArrayList<>();
         try {
@@ -342,7 +342,7 @@ public class DB {
 
     public static DebitCard fetchDebitCard(DebitCard debitCard) {
         DebitCard ans = new DebitCard("");
-        System.out.println("GetCourseFromCourseId");
+        System.out.println("fetch Debit card method");
         PreparedStatement stmt = null;
         try {
             if (conn == null)
@@ -379,5 +379,90 @@ public class DB {
             }// nothing we can do
             return ans;
         }
+    }
+
+    public static void debitBalance(DebitCard debitCard,float newBalance){
+        System.out.println("debitBalance method");
+        PreparedStatement stmt = null;
+
+        try {
+            if (conn == null)
+                throw new ConnectionNotMadeYetException();
+
+            String sql_query = "UPDATE debitCards SET balance=(?) WHERE cardNumber=(?)";
+            stmt = conn.prepareStatement(sql_query);
+            stmt.setString(2, debitCard.getCardNumber());
+            stmt.setFloat(1,newBalance);
+            stmt.executeUpdate();
+
+            System.out.println("The amount has been debited");
+
+        } catch (ConnectionNotMadeYetException | SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+        }
+
+    }
+
+    public static void addTransaction(Transaction transaction){
+        System.out.println("add Transaction method");
+        PreparedStatement stmt = null;
+
+        try {
+            if (conn == null)
+                throw new ConnectionNotMadeYetException();
+
+            String sql_query = "INSERT INTO transactions values(?,?,?,?)";
+            stmt = conn.prepareStatement(sql_query);
+            stmt.setInt(1, transaction.getTransactionID());
+            stmt.setFloat(2, transaction.getAmount());
+            stmt.setInt(3,transaction.getStudentId());
+            stmt.setString(4,transaction.getTimestamp());
+            stmt.executeUpdate();
+
+
+        } catch (ConnectionNotMadeYetException | SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+        }
+
+    }
+
+    public static void modifyCourseCount(Course course){
+        System.out.println("modifyCourseCount method");
+        PreparedStatement stmt = null;
+
+        try {
+            if (conn == null)
+                throw new ConnectionNotMadeYetException();
+
+            String sql_query = "UPDATE courses SET courseStrength=(?) WHERE courseId=(?)";
+            stmt = conn.prepareStatement(sql_query);
+            stmt.setInt(1,course.getcourseStrength());
+            stmt.setInt(2,course.getcourseId());
+            stmt.executeUpdate();
+
+            System.out.println("The course count has been modified!");
+
+        } catch (ConnectionNotMadeYetException | SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+        }
+
     }
 }
