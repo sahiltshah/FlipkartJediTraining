@@ -1,5 +1,6 @@
 package com.flipkart.utils;
 
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +20,7 @@ public class DbUtils {
         else {
             try {
                 Properties prop = new Properties();
-                InputStream inputStream = DbUtils.class.getClassLoader().getResourceAsStream("/config.properties");
+                InputStream inputStream = DbUtils.class.getClassLoader().getResourceAsStream("/Users/sahil.shah/Documents/FlipkartJEDITraining/CRS/src/main/java/com/config.properties");
                 prop.load(inputStream);
                 String driver = prop.getProperty("driver");
                 String url = prop.getProperty("url");
@@ -40,6 +41,5 @@ public class DbUtils {
         }
 
     }
-
-
 }
+

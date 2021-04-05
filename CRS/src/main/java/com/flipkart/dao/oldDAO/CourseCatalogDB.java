@@ -1,8 +1,7 @@
-package com.flipkart.dao;
+package com.flipkart.dao.oldDAO;
 
 import com.flipkart.Exception.CourseException.CourseIndexInvalidException;
 import com.flipkart.Exception.CourseException.CourseMapNeverExisted;
-import com.flipkart.Exception.CourseException.CourseNotFoundFromCourseID;
 import com.flipkart.Exception.StudentException.StudentIndexInvalidException;
 import com.flipkart.bean.CourseMap;
 import com.flipkart.bean.Professor;

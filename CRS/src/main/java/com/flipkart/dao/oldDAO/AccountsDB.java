@@ -1,6 +1,5 @@
-package com.flipkart.dao;
+package com.flipkart.dao.oldDAO;
 
-import com.flipkart.bean.Student;
 import com.flipkart.bean.Transaction;
 import com.flipkart.temporaryDB.DB;
 //modules complete

@@ -1,4 +1,4 @@
-package com.flipkart.dao;
+package com.flipkart.dao.oldDAO;
 
 import com.flipkart.bean.*;
 
