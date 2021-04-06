@@ -8,7 +8,9 @@ public class serviceInterface {
 
     static interface userFunctions{
         SpecialUser login();
-        void change_password();
+
+        void change_password(int studentId);
+
         void forgot_password();
         void deleteStudent(int studentRollNumber);
         void deleteProfessor(int facultyId);

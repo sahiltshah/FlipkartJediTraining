@@ -43,4 +43,8 @@ public class DebitCard {
         this.balance = balance;
     }
 
+    public void printInputDebitCard(){
+        System.out.println("Debit card: " + this.getCardNumber() + this.cvv);
+    }
+
 }

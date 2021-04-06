@@ -3,8 +3,12 @@ package com.flipkart.handler;
 
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
+import com.flipkart.dao.DB;
 import com.flipkart.service.CourseCatalogSystem;
+import com.flipkart.service.NewUserRegistrationSystem;
 import com.flipkart.temporaryDB.OldDB;
+
+import java.util.ArrayList;
 
 import static com.flipkart.utils.ScannerInput.input_obj;
 
@@ -22,7 +26,7 @@ public class AdminHandler {
                     "0 to logout of Admin Menu");
             choice = input_obj.nextInt();
             switch (choice) {
-                case 1: peruseStudentRegistration();
+                case 1: new NewUserRegistrationSystem().peruseStudentRegistration();
                     break;
                 case 2:
                     break;
@@ -30,7 +34,7 @@ public class AdminHandler {
                     break;
                 case 4:
                     CourseCatalogSystem courseCatalogSystem = new CourseCatalogSystem();
-                    courseCatalogSystem.assignAllCourses();
+                    //courseCatalogSystem.assignAllCourses();
                     break;
                 case 0:
                     getOutOfThisMenu = false;
@@ -39,22 +43,7 @@ public class AdminHandler {
         }
     }
 
-    void peruseStudentRegistration(){
-        int choice;
-        System.out.println("Printing all the names that have tried to register. if acceptable, enter 1 else enter 0: ");
 
-        for (Student student : OldDB.admin.studentsBuffer ){
-            System.out.println(student.getName());
-            choice=input_obj.nextInt();
-            if(choice==1){
-                student.setRollNumber(OldDB.globalRollNumber++);
-            }
-            else
-                OldDB.admin.studentsBuffer.remove(student);
-
-        }
-
-    }
 
     void addProfessor(){
         System.out.println("Enter the professor details: ");

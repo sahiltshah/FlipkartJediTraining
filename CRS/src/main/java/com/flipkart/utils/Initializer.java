@@ -11,8 +11,7 @@ public class Initializer {
         SpecialUser specialUser=new SpecialUser();
         specialUser.type=1;
         specialUser.id =0;
-        OldDB.loginMap.put("sahil",specialUser);
-        OldDB.loginDetails.put("sahil","sahil");
+
 
         DB.makeConnection();
     }

@@ -2,6 +2,8 @@ package com.flipkart.utils;
 
 import com.flipkart.bean.DebitCard;
 
+import java.util.Scanner;
+
 import static com.flipkart.utils.ScannerInput.input_obj;
 
 public class DebitCardInput {
@@ -19,11 +21,13 @@ public class DebitCardInput {
     }
 
     public static DebitCard DebitCardStudentInputFunction(){
+        Scanner sc= new Scanner(System.in);
         DebitCard debitCard = new DebitCard("");
         System.out.println("Enter the number: ");
-        debitCard.setCardNumber(input_obj.nextLine());
+        debitCard.setCardNumber(sc.nextLine());
         System.out.println("Enter the cvv: ");
-        debitCard.setCvv(input_obj.nextInt());
+        debitCard.setCvv(sc.nextInt());
+
         return debitCard;
     }
 }

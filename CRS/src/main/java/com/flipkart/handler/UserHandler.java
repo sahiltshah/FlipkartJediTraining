@@ -2,6 +2,7 @@ package com.flipkart.handler;
 
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.service.UserModificationSystem;
+import com.flipkart.utils.ScreenWork;
 
 import static com.flipkart.utils.ScannerInput.input_obj;
 
@@ -17,8 +18,12 @@ public class UserHandler {
         int userReturn;
         SpecialUser specialUser;
         while(count-- >0){
-
-            System.out.println("Enter 1 to login and 2 to register as a student: ");
+            ScreenWork.clearScreen();
+            System.out.println(
+                    "---------------------------------------------------------\n"+
+                    "Enter 1 to login as user and 2 to register as a student: \n"+
+                    "---------------------------------------------------------\n"
+            );
             choice= input_obj.nextInt();
             System.out.println(choice);
             switch (choice){
@@ -32,7 +37,10 @@ public class UserHandler {
                                     studentHandler.studentMenu(specialUser.id);
                                     break;
                             case 2: ProfessorHandler professorHandler=new ProfessorHandler();
-                                    professorHandler.professorMenu();
+                                    professorHandler.professorMenu(specialUser.id);
+                                    break;
+                            case 3: NewUserHandler newUserHandler = new NewUserHandler();
+                                    newUserHandler.newUserMenu(specialUser.id);
                                     break;
                             default:
                                 System.out.println("Wrong choice");

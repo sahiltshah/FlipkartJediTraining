@@ -1,13 +1,21 @@
 package com.flipkart.bean;
 
 public class Course {
+    public Course(String courseName, Integer courseId, Integer courseStrength, float courseCost, Integer facultyId) {
+        this.courseName = courseName;
+        this.courseId = courseId;
+        this.courseStrength = courseStrength;
+        this.courseCost = courseCost;
+        this.facultyId = facultyId;
+    }
+
     String courseName;
     Integer courseId;
     Integer courseStrength;
     float courseCost;
     Integer facultyId;
 
-    public Course(String courseName, int courseId, int courseStrength, float courseCost, int facultyId) {
+    public Course( int courseId, String courseName, int courseStrength, float courseCost, int facultyId) {
         this.courseCost=courseCost;
         this.courseId=courseId;
         this.courseName=courseName;
@@ -17,7 +25,9 @@ public class Course {
 
     public Course(){
         this.courseId=-1;
+        this.facultyId=-1;
     }
+
 
     public Integer getFacultyId() {
         return facultyId;
@@ -59,8 +69,7 @@ public class Course {
         this.courseStrength = courseStrength;
     }
     public void printCourse(){
-        System.out.println(this.courseId + " | " + this.courseName + " | " + this.courseStrength + " | " + this.courseCost);
+        System.out.println("ID: " + this.courseId + " | CourseName: " + this.courseName + " | Strength: " + this.courseStrength + " | Cost: " + this.courseCost + " | Faculty: " + this.facultyId);
     }
-
 
 }
