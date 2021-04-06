@@ -4,24 +4,28 @@ import com.flipkart.Exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.SQLQueriesConstants;
 import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Transaction;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AccountingSystemDBOperations implements DaoInterface.AccountingSystemDBFunctions {
+    public static final Logger logger = LogManager.getLogger(AccountingSystemDBOperations.class);
 
     public DebitCard fetchDebitCard(DebitCard debitCard) {
         DebitCard ans = new DebitCard("");
-        System.out.println("fetch Debit card method");
+        logger.info("fetch Debit card method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB db= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (db.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_DEBIT_CARD;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = db.conn.prepareStatement(sql_query);
             stmt.setString(1, debitCard.getCardNumber());
             rs = stmt.executeQuery();
 
@@ -40,10 +44,10 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         } catch (ConnectionNotMadeYetException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try { if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -51,27 +55,29 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
                 if (stmt != null)
                     stmt.close();
 
-            } catch (SQLException se2) {
-            }// nothing we can do
+            } catch (SQLException ex) {
+                logger.error(ex.getMessage());
+            }
             return ans;
         }
     }
 
     public void debitBalance(DebitCard debitCard,float newBalance){
-        System.out.println("debitBalance method");
+        logger.info("debitBalance method");
         PreparedStatement stmt = null;
+        DB db= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (db.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.DEBIT_BALANCE;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = db.conn.prepareStatement(sql_query);
             stmt.setString(2, debitCard.getCardNumber());
             stmt.setFloat(1,newBalance);
             stmt.executeUpdate();
 
-            System.out.println("The amount has been debited");
+            logger.info("The amount has been debited");
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
             e.printStackTrace();
@@ -79,22 +85,24 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
             try {
                 if (stmt != null)
                     stmt.close();
-            } catch (SQLException se2) {
-            }// nothing we can do
+            } catch (SQLException ex) {
+                logger.info(ex.getMessage());
+            }
         }
 
     }
 
     public void addTransaction(Transaction transaction){
-        System.out.println("add Transaction method");
+        logger.info("add Transaction method");
         PreparedStatement stmt = null;
+        DB db= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (db.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_TRANSACTION;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = db.conn.prepareStatement(sql_query);
             stmt.setInt(1, transaction.getTransactionID());
             stmt.setFloat(2, transaction.getAmount());
             stmt.setInt(3,transaction.getStudentId());
@@ -109,8 +117,9 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
             try {
                 if (stmt != null)
                     stmt.close();
-            } catch (SQLException se2) {
-            }// nothing we can do
+            } catch (SQLException ex) {
+                logger.error(ex.getMessage());
+            }
         }
 
     }

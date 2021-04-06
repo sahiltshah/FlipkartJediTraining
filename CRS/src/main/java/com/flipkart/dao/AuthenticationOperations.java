@@ -3,6 +3,9 @@ package com.flipkart.dao;
 import com.flipkart.Exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.SQLQueriesConstants;
 import com.flipkart.bean.SpecialUser;
+import com.flipkart.handler.UserHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,18 +13,22 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class AuthenticationOperations implements DaoInterface.AuthenticationSystemDBFunctions {
+    public static final Logger logger = LogManager.getLogger(AuthenticationOperations.class);
+
+
     public ArrayList<String> loginAccess(String username) {
-        System.out.println("LoginAccess method");
+        logger.info("LoginAccess method");
         PreparedStatement stmt = null;
         ArrayList<String> ans = new ArrayList<>();
         ResultSet rs = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.LOGIN_ACCESS;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1, username);
             rs = stmt.executeQuery();
 
@@ -37,20 +44,21 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
 
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
 
             }
             return ans;
@@ -59,16 +67,17 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     }
 
     public ArrayList<SpecialUser> loginMapAccess(String username) {
-        System.out.println("Login Map access method");
+        logger.info("Login Map access method");
         PreparedStatement stmt = null;
         ArrayList<SpecialUser> ans = new ArrayList<>();
         ResultSet rs = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.LOGIN_MAP_ACCESS;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1, username);
             rs = stmt.executeQuery();
 
@@ -82,19 +91,19 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         finally {
             try { if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-
+                logger.error("SQL Exception: "+se2.getMessage());
             }// nothing we can do
         }
 
@@ -103,16 +112,17 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     }
 
     public String getUserNameFromStudentId(int studentId){
-        System.out.println("Get username from StudentId method");
+        logger.info("Get username from StudentId method");
         String ans = "";
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_USERNAME_FROM_STUDENTID;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, studentId);
             rs = stmt.executeQuery();
 
@@ -127,47 +137,50 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         } catch (ConnectionNotMadeYetException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try { if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
             try {
                 if (stmt != null)
                     stmt.close();
 
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
             }// nothing we can do
             return ans;
         }
     }
 
     public void changePassword(String userName, String newPassword) {
-        System.out.println("change password function");
+        logger.info("change password function");
         PreparedStatement stmt = null;
+        DB x= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.CHANGE_PASSWORD;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1,newPassword);
             stmt.setString(2,userName);
             stmt.executeUpdate();
 
-            System.out.println("The password has been modified!");
+            logger.info("The password has been modified!");
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error("SQL Exception: "+se2.getMessage());
+            }
         }
 
     }
@@ -176,15 +189,17 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
         String ans = "";
 
-        System.out.println("getSpecific username method");
+        logger.info("getSpecific username method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB x= DB.getInstance();
+
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_USERNAME_FROM_LOGINDETAILS;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1, username);
             rs = stmt.executeQuery();
 
@@ -199,19 +214,20 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
 
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
 
             }
             return ans;
@@ -221,27 +237,29 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     }
 
     public void registerNewUserInDB(String username,String password){
-        System.out.println("register NewUser method");
+        logger.info("register NewUser method");
         PreparedStatement stmt = null;
+        DB x= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_LOGINDETAILS;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
             stmt.setString(2,password);
             stmt.executeUpdate();
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
             }// nothing we can do
             addNewUserToLoginMap(username);
         }
@@ -249,15 +267,16 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     }
 
     public void addNewUserToLoginMap(String username){
-        System.out.println("addNewUserToLoginMap method");
+        logger.info("addNewUserToLoginMap method");
         PreparedStatement stmt = null;
+        DB x= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_LOGINMAP;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
             stmt.setInt(2,-1);
             stmt.setInt(3,3);
@@ -265,81 +284,87 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
             }// nothing we can do
         }
 
     }
 
     public void removeUsernameFromLoginMap(String username){
-        System.out.println("Removing user from loginMap");
+        logger.info("Removing user from loginMap");
         PreparedStatement stmt = null;
+        DB x= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.REMOVE_LOGINMAP;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
 
             stmt.executeUpdate();
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
             }// nothing we can do
         }
 
     }
 
     public void removeUsernameFromLoginDetails(String username){
-        System.out.println("Removing user from loginDetails");
+        logger.info("Removing user from loginDetails");
         PreparedStatement stmt = null;
+        DB x= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.REMOVE_LOGINDETAILS;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
 
             stmt.executeUpdate();
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
             }// nothing we can do
         }
 
     }
 
     public void addStudentType(String username,int studentId) {
-        System.out.println("Modifying the user type");
+        logger.info("Modifying the user type");
         PreparedStatement stmt = null;
+        DB x= DB.getInstance();
 
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.MODIFY_USER_TYPE;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1,1);
             stmt.setInt(2,studentId);
             stmt.setString(3,username);
@@ -348,12 +373,13 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
             }// nothing we can do
         }
 
@@ -361,48 +387,79 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
     public ArrayList<String> getUnregisteredUsers() {
         ArrayList<String> ans = new ArrayList<>();
-
-        System.out.println("getSpecific username that are unregistered method");
+        DB x= DB.getInstance();
+        logger.info("getSpecific username that are unregistered method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_UNREGISTERED_USERS;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             rs = stmt.executeQuery();
 
 
             //STEP 5: Extract data from result set
             while (rs.next()) {
                 //Retrieve by column name
-                ans.add(rs.getString("userame"));
+                ans.add(rs.getString("username"));
             }
 
             //STEP 6: Clean-up environment
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
 
             try {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
 
             }
             return ans;
 
         }
 
+
+    }
+
+    public void addNewProfessorToLoginMap(String username,int facultyId){
+        logger.info("add Professor to loginMap");
+        PreparedStatement stmt = null;
+        DB x= DB.getInstance();
+
+        try {
+            if (x.conn == null)
+                throw new ConnectionNotMadeYetException();
+
+            String sql_query = SQLQueriesConstants.ADD_LOGINMAP;
+            stmt = x.conn.prepareStatement(sql_query);
+            stmt.setString(1,username);
+            stmt.setInt(2,facultyId);
+            stmt.setInt(3,2);
+            stmt.executeUpdate();
+
+
+        } catch (ConnectionNotMadeYetException | SQLException e) {
+            logger.error(e.getMessage());
+        } finally {
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
+            }
+        }
 
     }
 }

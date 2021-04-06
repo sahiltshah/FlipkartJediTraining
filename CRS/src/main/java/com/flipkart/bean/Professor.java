@@ -24,5 +24,9 @@ public class Professor extends User{ //extends User implements ProfessorFunction
     Integer facultyId;
     public ArrayList<Integer> subjectsUndertaken;
 
+    public Professor(int professorId){
+        this.facultyId=professorId;
+    }
+
 
 }

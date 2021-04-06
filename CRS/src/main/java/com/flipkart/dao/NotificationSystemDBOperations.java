@@ -4,6 +4,9 @@ import com.flipkart.Exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.SQLQueriesConstants;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Notification;
+import com.flipkart.service.NotificationSystem;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,16 +14,18 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class NotificationSystemDBOperations {
-    public void addNotification(Notification notification){
-        System.out.println("add Notification method");
-        PreparedStatement stmt = null;
+    public static final Logger logger = LogManager.getLogger(NotificationSystemDBOperations.class);
 
+    public void addNotification(Notification notification){
+        logger.info("add Notification method");
+        PreparedStatement stmt = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_NOTIFICATION;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1,notification.notificationId);
             stmt.setString(2,notification.timestamp);
             stmt.setString(3,notification.message);
@@ -42,18 +47,18 @@ public class NotificationSystemDBOperations {
     }
 
     public ArrayList<Notification> getNotifications(String queryUsername){
-        System.out.println("Get notifications method");
+        logger.info("Get notifications method");
         ArrayList<Notification> ans = new ArrayList<>();
 
         PreparedStatement stmt = null;
         ResultSet rs = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_NOTIFICATION_USER;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setString(1,queryUsername);
 
             rs = stmt.executeQuery();
@@ -70,7 +75,7 @@ public class NotificationSystemDBOperations {
                 timestamp=rs.getString(2);
                 message=rs.getString(3);
                 username=rs.getString(4);
-                //System.out.println(message);
+                //logger.info();(message);
                 ans.add(new Notification(timestamp,notificationId,message,username));
 
             }
@@ -82,7 +87,7 @@ public class NotificationSystemDBOperations {
             e.printStackTrace();
         } finally {
             try { if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -42,7 +42,7 @@ public class AccountingSystem implements serviceInterface.AccountingSystemFuncti
                 if(debitCard.getBalance()<billAmount)
                     throw new InsufficientBalanceException(debitCard.getBalance()-billAmount);
                 else{
-                    System.out.println("Adequte balance exists");
+                    System.out.println("Adequate balance exists in your account");
 
                     Transaction transaction = new Transaction(studentIndex, billAmount, globalTransactionId++);
 

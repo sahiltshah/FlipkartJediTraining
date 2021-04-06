@@ -1,0 +1,18 @@
+2021-04-06 18:47:44.854 [main] INFO  com.flipkart.client.Runner - Initialization complete!
+2021-04-06 18:47:44.856 [main] DEBUG com.flipkart.client.Runner - The next thing
+2021-04-06 18:47:44.856 [main] ERROR com.flipkart.client.Runner - An error has occured
+2021-04-06 18:48:04.743 [main] INFO  com.flipkart.client.Runner - Initialization complete!
+2021-04-06 18:48:04.744 [main] DEBUG com.flipkart.client.Runner - The next thing
+2021-04-06 18:48:04.745 [main] ERROR com.flipkart.client.Runner - An error has occured
+2021-04-06 18:48:10.599 [main] DEBUG com.flipkart.client.Runner - studentMenu
+2021-04-06 18:50:42.922 [main] INFO  com.flipkart.client.Runner - Initialization complete!
+2021-04-06 18:50:42.923 [main] DEBUG com.flipkart.client.Runner - The next thing
+2021-04-06 18:50:42.923 [main] ERROR com.flipkart.client.Runner - An error has occured
+2021-04-06 18:50:53.837 [main] INFO  com.flipkart.client.Runner - studentMenu
+2021-04-06 18:51:37.178 [main] INFO  com.flipkart.client.Runner - Initialization complete!
+2021-04-06 18:51:37.180 [main] DEBUG com.flipkart.client.Runner - The next thing
+2021-04-06 18:51:37.180 [main] ERROR com.flipkart.client.Runner - An error has occured
+2021-04-06 18:51:45.377 [main] INFO  com.flipkart.client.Runner - Initialization complete!
+2021-04-06 18:51:45.379 [main] DEBUG com.flipkart.client.Runner - The next thing
+2021-04-06 18:51:45.379 [main] ERROR com.flipkart.client.Runner - An error has occured
+2021-04-06 18:51:52.560 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu

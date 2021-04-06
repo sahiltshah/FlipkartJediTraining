@@ -5,6 +5,8 @@ import com.flipkart.SQLQueriesConstants;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.CourseMap;
 import com.flipkart.bean.Grade;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,19 +15,20 @@ import java.util.ArrayList;
 
 
 public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSystemDbFunctions {
+    public static final Logger logger = LogManager.getLogger(CourseCatalogDBOperations.class);
 
     public ArrayList<Course> getAllCourses() {
-        System.out.println("Get all courses method");
+        logger.info("Get all courses method");
         ArrayList<Course> ans = new ArrayList<>();
         PreparedStatement stmt = null;
         ResultSet rs = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_ALL_COURSES;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
 
             rs = stmt.executeQuery();
 
@@ -49,7 +52,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             e.printStackTrace();
         } finally {
             try { if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -57,7 +60,8 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
             return ans;
         }
 
@@ -65,17 +69,18 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     }
 
     public void showAllCourses() {
-        System.out.println("Show All Courses method");
+        logger.info("Show All Courses method");
         PreparedStatement stmt = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_ALL_COURSES;
-            stmt = DB.conn.prepareStatement(sql_query);
-            System.out.println("Debug");
+            stmt = x.conn.prepareStatement(sql_query);
+            logger.info("Debug");
             ResultSet rs = stmt.executeQuery();
-            System.out.println("debug 2");
+            logger.info("debug 2");
 
             //STEP 5: Extract data from result set
             while (rs.next()) {
@@ -87,7 +92,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 int facultyId = rs.getInt("facultyId");
 
                 //Display values
-                System.out.println(courseId + " | " + courseName + " | " + courseStrength + " | " + courseCost + " | " + facultyId);
+                logger.info(courseId + " | " + courseName + " | " + courseStrength + " | " + courseCost + " | " + facultyId);
             }
             //STEP 6: Clean-up environment
             stmt.close();
@@ -100,24 +105,26 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
     }
 
     public Course getCourseFromCourseId(int pCourseId) {
-        System.out.println("GetCourseFromCourseId: " + pCourseId);
+        logger.info("GetCourseFromCourseId: " + pCourseId);
         Course ans = new Course();
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_COURSE_FROM_COURSEID;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, pCourseId);
             rs = stmt.executeQuery();
-            System.out.println(rs);
+            logger.info(rs);
 
 
             //STEP 5: Extract data from result set
@@ -141,17 +148,19 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         } catch (ConnectionNotMadeYetException connectionNotMadeYetException) {
             connectionNotMadeYetException.printStackTrace();
         } catch (Exception exception){
-            System.out.println("Exception hit!");
-            System.out.println(exception.getMessage());
+            logger.info("Exception hit!");
+            logger.info(exception.getMessage());
         }
         finally {
             try { if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            try { if (stmt != null) stmt.close(); } catch (Exception e) {}
-            System.out.println("Returning the course from courseId");
+            try { if (stmt != null) stmt.close(); } catch (Exception e) {
+                logger.error(e.getMessage());
+            }
+            logger.info("Returning the course from courseId");
             return ans;
         }
 
@@ -159,20 +168,20 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     }
 
     public void modifyCourseCount(Course course){
-        System.out.println("modifyCourseCount method");
+        logger.info("modifyCourseCount method");
         PreparedStatement stmt = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.MODIFY_COURSE_COUNT;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1,course.getcourseStrength());
             stmt.setInt(2,course.getcourseId());
             stmt.executeUpdate();
 
-            System.out.println("The course count has been modified!");
+            logger.info("The course count has been modified!");
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
             e.printStackTrace();
@@ -181,26 +190,27 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
 
     }
 
     public void addFaculty(int professorId,int courseId){
-        System.out.println("addFaculty function");
+        logger.info("addFaculty function");
         PreparedStatement stmt = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.MODIFY_COURSE_FACULTY;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1,professorId);
             stmt.setInt(2,courseId);
             stmt.executeUpdate();
 
-            System.out.println("The course has been alloted to the faculty!");
+            logger.info("The course has been alloted to the faculty!");
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
             e.printStackTrace();
@@ -209,22 +219,24 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
 
     }
 
     public ArrayList<Course> getFacultyCourses(int professorId) {
         ArrayList<Course> ans = new ArrayList<>();
-        System.out.println("getFacultyCourses method");
+        logger.info("getFacultyCourses method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_FACULTY_COURSES;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, professorId);
             rs = stmt.executeQuery();
 
@@ -243,7 +255,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         } finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -252,22 +264,22 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-
+                logger.error(se2.getMessage());
             }
             return ans;
         }
     }
 
     public void dropFacultyCourse(int courseId){
-        System.out.println("drop Faculty course method");
+        logger.info("drop Faculty course method");
         PreparedStatement stmt = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.MODIFY_COURSE_FACULTY;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, -1);
             stmt.setInt(2, courseId);
             stmt.executeUpdate();
@@ -280,7 +292,8 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
 
     }
@@ -288,15 +301,15 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
 
     public void addCourseMap(CourseMap courseMap) {
-        System.out.println("addCourseMap method");
+        logger.info("addCourseMap method");
         PreparedStatement stmt = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_COURSE_MAP;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, courseMap.studentId);
             stmt.setInt(2, courseMap.courseId);
             stmt.executeUpdate();
@@ -309,22 +322,23 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
 
 
     }
 
     public void dropCourseMap(CourseMap courseMap) {
-        System.out.println("dropCourseMap method");
+        logger.info("dropCourseMap method");
         PreparedStatement stmt = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.DROP_COURSE_MAP;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, courseMap.studentId);
             stmt.setInt(2, courseMap.courseId);
             stmt.executeUpdate();
@@ -337,22 +351,24 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
 
     }
 
     public ArrayList<Integer> getCoursesFromStudent(int studentId) {
         ArrayList<Integer> ans = new ArrayList<>();
-        System.out.println("GetStudentCourses method");
+        logger.info("GetStudentCourses method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_STUDENT_COURSES;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, studentId);
             rs = stmt.executeQuery();
 
@@ -372,7 +388,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         } finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -381,7 +397,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-
+                logger.error(se2.getMessage());
             }
             return ans;
         }
@@ -389,15 +405,16 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
     public ArrayList<Integer> getStudentsFromCourse(int courseId) {
         ArrayList<Integer> ans = new ArrayList<>();
-        System.out.println("getStudentsFromCourse method");
+        logger.info("getStudentsFromCourse method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_STUDENTS_FROM_COURSE;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, courseId);
             rs = stmt.executeQuery();
 
@@ -416,7 +433,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         } finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -425,7 +442,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-
+                logger.error(se2.getMessage());
             }
             return ans;
 
@@ -437,15 +454,16 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
     public ArrayList<Grade> fetchGrades(int studentId){
         ArrayList<Grade> ans = new ArrayList<>();
-        System.out.println("GetStudentGrades method");
+        logger.info("GetStudentGrades method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_GRADES_FROM_STUDENTID;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, studentId);
             rs = stmt.executeQuery();
 
@@ -464,7 +482,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         } finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -473,7 +491,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-
+                logger.error(se2.getMessage());
             }
             return ans;
         }
@@ -482,16 +500,16 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
     public void addStudentGrades(ArrayList<Grade> grades){
 
-        System.out.println("addStudentGrades method");
+        logger.info("addStudentGrades method");
         PreparedStatement stmt = null;
-
+        DB x= DB.getInstance();
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_GRADE;
             for(Grade grade : grades){
-                stmt = DB.conn.prepareStatement(sql_query);
+                stmt = x.conn.prepareStatement(sql_query);
                 stmt.setInt(1,grade.studentId );
                 stmt.setInt(2, grade.courseId);
                 stmt.setString(3, String.valueOf(grade.grade));
@@ -506,23 +524,24 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
 
     }
 
     public ArrayList<Grade> getSubjectGrades(int courseId){
         ArrayList<Grade> ans=new ArrayList<>();
-
-        System.out.println("getSubjectGrades method");
+        DB x= DB.getInstance();
+        logger.info("getSubjectGrades method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
         try {
-            if (DB.conn == null)
+            if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_GRADE;
-            stmt = DB.conn.prepareStatement(sql_query);
+            stmt = x.conn.prepareStatement(sql_query);
             stmt.setInt(1, courseId);
             rs = stmt.executeQuery();
 
@@ -541,7 +560,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         } finally {
             try {
                 if (rs != null) rs.close();
-                System.out.println("Closed rs");
+                logger.info("Closed rs");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -550,7 +569,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-
+                logger.error(se2.getMessage());
             }
             return ans;
 

@@ -2,10 +2,14 @@ package com.flipkart.validator;
 import com.flipkart.Exception.AuthenticationException.*;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.dao.AuthenticationOperations;
+import com.flipkart.dao.CourseCatalogDBOperations;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
 public class  AuthenticationValidator {
+    public static final Logger logger = LogManager.getLogger(AuthenticationValidator.class);
     public static SpecialUser authenticate(String username, String password){
         SpecialUser specialUser = new SpecialUser();
         try{
@@ -20,6 +24,7 @@ public class  AuthenticationValidator {
         }
         catch (InvalidLoginInputException e) {
             System.out.println("Username or password is invalid length");
+            logger.debug(e.getMessage());
             return specialUser;
         }
 
@@ -34,7 +39,7 @@ public class  AuthenticationValidator {
             if(ans.size()!=0)
             {
                 if(ans.get(0).equals(password)){
-                    System.out.println("Authentication valid");
+                    System.out.println("Authentication successful!");
 
                     ArrayList<SpecialUser> specialUsers = authenticationOperations.loginMapAccess(username);
                     if(specialUsers.size()==0)
@@ -52,8 +57,10 @@ public class  AuthenticationValidator {
 
         catch (UserDoesNotExistException e) {
             System.out.println("The username you enterred doesn't exist in our records. Try again!");
+            logger.debug(e.getMessage());
         } catch (WrongPasswordException e) {
             System.out.println("You enterred the wrong password! Try again");
+            logger.debug(e.getMessage());
         } catch (UserIDMapDoesNotExist userIDMapDoesNotExist) {
             userIDMapDoesNotExist.printStackTrace();
         }
@@ -69,7 +76,8 @@ public class  AuthenticationValidator {
                 throw new UsernIDAlreadyInUse();
         } catch (UsernIDAlreadyInUse usernIDAlreadyInUse) {
             System.out.println("Username already in use. Try again! ");
-            usernIDAlreadyInUse.printStackTrace();
+            logger.debug(usernIDAlreadyInUse.getMessage());
+
 
         }
 

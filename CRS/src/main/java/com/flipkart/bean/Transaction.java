@@ -31,7 +31,7 @@ public class Transaction {
         this.amount = amount;
         this.transactionID = transactionID;
         this.timestamp = String.valueOf(LocalDateTime.now());
-        System.out.println("Time stamp: "+timestamp);
+
 
     }
 

@@ -8,11 +8,14 @@ import com.flipkart.bean.Course;
 import com.flipkart.dao.CourseCatalogDBOperations;
 import com.flipkart.dao.DB;
 import com.flipkart.temporaryDB.OldDB;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
 //all modules !complete
 public class CourseCatalogValidator implements helperInterface.CourseValidatorFunctions {
+    public static final Logger logger = LogManager.getLogger(CourseCatalogDBOperations.class);
 
 
     @Override
@@ -79,7 +82,6 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
             for(Course course : courses){
                 if(course.getcourseId() == courseId){
                     if(course.getFacultyId()==professorId){
-                        System.out.println("Condition met and returning true");
                         return true;
                     }
 
@@ -90,12 +92,12 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
             throw new CourseIndexInvalidException();
         }
          catch (CourseIndexInvalidException e) {
-             System.out.println(e);
-            e.printStackTrace();
+             System.out.println("The course index you've enterred is invalid");
+             logger.debug(e.getMessage());
         }
         catch (AreNotTeachingThisCourseException e){
-            System.out.println(e);
-            e.printStackTrace();
+            System.out.println("You aren't teaching this course so can't select it");
+            logger.debug(e.getMessage());
         }
         return false;
 

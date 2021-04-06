@@ -2,16 +2,24 @@ package com.flipkart.handler;
 
 import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Student;
+import com.flipkart.client.Runner;
 import com.flipkart.service.AccountingSystem;
 import com.flipkart.service.CourseCatalogSystem;
 import com.flipkart.service.NotificationSystem;
 import com.flipkart.service.UserModificationSystem;
 import com.flipkart.utils.DebitCardInput;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static com.flipkart.utils.ScannerInput.input_obj;
 
 public class StudentHandler {
+
+    public static final Logger logger = LogManager.getLogger(StudentHandler.class);
+
     public void studentMenu(int studentId) {
+        logger.info("studentMenu");
+
         boolean getOutOfThisMenu = true;
         int choice;
         while (getOutOfThisMenu) {

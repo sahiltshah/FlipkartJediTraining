@@ -7,24 +7,49 @@ import java.util.ArrayList;
 
 import com.flipkart.SQLQueriesConstants;
 import com.flipkart.bean.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class DB {
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/crsDB";
+    public String JDBC_DRIVER;
+    public String DB_URL;
 
-    static final String USER = "root";
-    static final String PASS = "";
+    public String USER;
+    public String PASS;
 
-    static Connection conn = null;
+    public Connection conn = null;
+
+    private static DB single_instance = null;
+
+    public static final Logger logger = LogManager.getLogger(DB.class);
 
 
-    public static void makeConnection() {
-        System.out.println("make connection method");
+    // private constructor restricted to this class itself
+    private DB()
+    {
+        JDBC_DRIVER = "com.mysql.jdbc.Driver";
+        DB_URL = "jdbc:mysql://localhost/crsDB";
+        USER = "root";
+        PASS = "";
+    }
+
+    // static method to create instance of Singleton class
+    public static DB getInstance()
+    {
+        if (single_instance == null)
+            single_instance = new DB();
+
+        return single_instance;
+    }
+
+
+    public void makeConnection() {
+        logger.info("make connection method");
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("Connecting to database...");
-            conn = DriverManager.getConnection(DB_URL, USER, PASS);
-            System.out.println("Connection has been made");
+            logger.info("Connecting to database...");
+            conn = DriverManager.getConnection(this.DB_URL, this.USER, this.PASS);
+            logger.info("Connection has been made");
 
 
         } catch (ClassNotFoundException | SQLException e) {
@@ -34,8 +59,9 @@ public class DB {
 
     }
 
-    public static void closeConnection() {
-        System.out.println("close connection method");
+    public void closeConnection() {
+        logger.info("Connection has been closed");
+
         try {
             conn.close();
         } catch (SQLException throwables) {

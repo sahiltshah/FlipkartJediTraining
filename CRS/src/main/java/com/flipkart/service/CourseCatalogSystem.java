@@ -128,7 +128,7 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
             courseCatalogDBOperations.dropFacultyCourse(courseId);
         }
         else
-            System.out.println("There was an error in deleting the course");
+            System.out.println("Can't drop course!");
 
 
 
@@ -146,7 +146,7 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
         int courseId = sc.nextInt();
         CourseCatalogValidator courseCatalogValidator = new CourseCatalogValidator();
         if(courseCatalogValidator.checkTaughtCourse(courseId,courses,professorId)){
-            System.out.println("Condition met");
+
             ArrayList<Integer> studentIds = courseCatalogDBOperations.getStudentsFromCourse(courseId);
             System.out.println("Enter the grades of each student one by one: ");
             for(int studentId : studentIds){
@@ -159,7 +159,7 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
             courseCatalogDBOperations.addStudentGrades(grades);
         }
         else
-            System.out.println("courseId enterred not valid!");
+            System.out.println("courseId entered is not valid!");
     }
 
     public void viewGrades(int professorId){
