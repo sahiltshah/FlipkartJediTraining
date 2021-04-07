@@ -1,10 +1,7 @@
 package com.flipkart.dao;
 
-import com.flipkart.Exception.DbException.ConnectionNotMadeYetException;
-import com.flipkart.SQLQueriesConstants;
-import com.flipkart.bean.Course;
+import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.Notification;
-import com.flipkart.service.NotificationSystem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -41,7 +38,8 @@ public class NotificationSystemDBOperations {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
         }
 
     }
@@ -95,7 +93,8 @@ public class NotificationSystemDBOperations {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
+                logger.error(se2.getMessage());
+            }
             return ans;
         }
 

@@ -1,12 +1,9 @@
 package com.flipkart.service;
-import com.flipkart.Exception.AuthenticationException.UserDoesNotExistException;
+import com.flipkart.exception.AuthenticationException.UserDoesNotExistException;
 import com.flipkart.bean.Notification;
-import com.flipkart.bean.Professor;
-import com.flipkart.bean.Student;
 import com.flipkart.dao.AuthenticationOperations;
 import com.flipkart.dao.NotificationSystemDBOperations;
 import com.flipkart.temporaryDB.OldDB;
-import com.sun.tools.corba.se.idl.constExpr.Not;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

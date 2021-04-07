@@ -1,12 +1,7 @@
 package com.flipkart.dao;
 
-import com.flipkart.Exception.DbException.ConnectionNotMadeYetException;
-import com.flipkart.SQLQueriesConstants;
 import com.flipkart.bean.*;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**

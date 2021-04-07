@@ -1,7 +1,6 @@
 package com.flipkart.dao;
 
-import com.flipkart.Exception.DbException.ConnectionNotMadeYetException;
-import com.flipkart.SQLQueriesConstants;
+import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Transaction;
 import org.apache.logging.log4j.LogManager;

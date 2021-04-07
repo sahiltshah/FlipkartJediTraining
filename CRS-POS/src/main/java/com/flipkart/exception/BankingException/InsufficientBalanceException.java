@@ -1,4 +1,4 @@
-package com.flipkart.Exception.BankingException;
+package com.flipkart.exception.BankingException;
 
 public class InsufficientBalanceException extends Exception{
     private double amount;

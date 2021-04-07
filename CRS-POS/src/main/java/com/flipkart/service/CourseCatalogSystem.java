@@ -1,9 +1,9 @@
 package com.flipkart.service;
 
-import com.flipkart.Exception.CourseException.CourseAlreadyFullException;
-import com.flipkart.Exception.CourseException.CourseAlreadyHasFaculty;
-import com.flipkart.Exception.CourseException.CourseIndexInvalidException;
-import com.flipkart.Exception.CourseException.CourseNotFoundException;
+import com.flipkart.exception.CourseException.CourseAlreadyFullException;
+import com.flipkart.exception.CourseException.CourseAlreadyHasFaculty;
+import com.flipkart.exception.CourseException.CourseIndexInvalidException;
+import com.flipkart.exception.CourseException.CourseNotFoundException;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.CourseMap;
 import com.flipkart.bean.Grade;

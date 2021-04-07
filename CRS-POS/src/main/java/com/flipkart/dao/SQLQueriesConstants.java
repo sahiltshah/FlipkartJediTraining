@@ -1,4 +1,4 @@
-package com.flipkart;
+package com.flipkart.dao;
 
 public class SQLQueriesConstants {
     //debitCards table

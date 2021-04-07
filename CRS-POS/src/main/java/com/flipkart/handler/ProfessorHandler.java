@@ -1,17 +1,6 @@
 package com.flipkart.handler;
 
-import com.flipkart.Exception.CourseException.CourseAlreadyHasFaculty;
-import com.flipkart.Exception.CourseException.CourseIndexInvalidException;
-import com.flipkart.bean.Course;
-import com.flipkart.bean.DebitCard;
-import com.flipkart.bean.SpecialUser;
-import com.flipkart.dao.DB;
-import com.flipkart.service.AccountingSystem;
 import com.flipkart.service.CourseCatalogSystem;
-import com.flipkart.service.UserModificationSystem;
-import com.flipkart.utils.DebitCardInput;
-
-import java.util.Scanner;
 
 import static com.flipkart.utils.ScannerInput.input_obj;
 

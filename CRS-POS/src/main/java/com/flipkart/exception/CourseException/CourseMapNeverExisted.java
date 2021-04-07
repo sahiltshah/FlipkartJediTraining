@@ -1,4 +1,4 @@
-package com.flipkart.Exception.CourseException;
+package com.flipkart.exception.CourseException;
 
 public class CourseMapNeverExisted extends Exception{
 }

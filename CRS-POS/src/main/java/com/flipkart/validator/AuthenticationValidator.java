@@ -1,8 +1,7 @@
 package com.flipkart.validator;
-import com.flipkart.Exception.AuthenticationException.*;
+import com.flipkart.exception.AuthenticationException.*;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.dao.AuthenticationOperations;
-import com.flipkart.dao.CourseCatalogDBOperations;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,12 +1,11 @@
 package com.flipkart.service;
 
-import com.flipkart.Exception.BankingException.DebitCardInvalid;
-import com.flipkart.Exception.BankingException.InsufficientBalanceException;
+import com.flipkart.exception.BankingException.DebitCardInvalid;
+import com.flipkart.exception.BankingException.InsufficientBalanceException;
 import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Transaction;
 import com.flipkart.dao.AccountingSystemDBOperations;
 import com.flipkart.dao.CourseCatalogDBOperations;
-import com.flipkart.dao.DB;
 
 import java.util.ArrayList;
 

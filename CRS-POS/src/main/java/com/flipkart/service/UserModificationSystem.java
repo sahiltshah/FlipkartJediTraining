@@ -1,13 +1,10 @@
 package com.flipkart.service;
-import com.flipkart.Exception.AuthenticationException.UserDoesNotExistException;
+import com.flipkart.exception.AuthenticationException.UserDoesNotExistException;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.dao.AuthenticationOperations;
-import com.flipkart.dao.DB;
 import com.flipkart.validator.AuthenticationValidator;
 
 import java.util.Scanner;
-
-import static com.flipkart.utils.ScannerInput.input_obj;
 
 
 public class UserModificationSystem implements serviceInterface.userFunctions {

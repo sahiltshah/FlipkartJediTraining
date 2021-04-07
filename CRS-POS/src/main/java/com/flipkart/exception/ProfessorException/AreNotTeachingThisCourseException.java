@@ -1,4 +1,4 @@
-package com.flipkart.Exception.ProfessorException;
+package com.flipkart.exception.ProfessorException;
 
 public class AreNotTeachingThisCourseException extends Exception{
 }

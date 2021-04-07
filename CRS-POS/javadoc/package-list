@@ -1,10 +1,10 @@
 com.flipkart
-com.flipkart.Exception.AuthenticationException
-com.flipkart.Exception.BankingException
-com.flipkart.Exception.CourseException
-com.flipkart.Exception.DbException
-com.flipkart.Exception.ProfessorException
-com.flipkart.Exception.StudentException
+com.flipkart.exception.AuthenticationException
+com.flipkart.exception.BankingException
+com.flipkart.exception.CourseException
+com.flipkart.exception.DbException
+com.flipkart.exception.ProfessorException
+com.flipkart.exception.StudentException
 com.flipkart.bean
 com.flipkart.client
 com.flipkart.client.unused

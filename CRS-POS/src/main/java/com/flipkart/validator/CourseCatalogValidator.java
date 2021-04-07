@@ -1,16 +1,14 @@
 package com.flipkart.validator;
 
-import com.flipkart.Exception.CourseException.CourseAlreadyExists;
-import com.flipkart.Exception.CourseException.CourseAlreadyHasStudents;
-import com.flipkart.Exception.CourseException.CourseIndexInvalidException;
-import com.flipkart.Exception.CourseException.CourseNotFoundFromCourseID;
-import com.flipkart.Exception.ProfessorException.AreNotTeachingThisCourseException;
-import com.flipkart.Exception.ProfessorException.CantAbandonSubjectException;
+import com.flipkart.exception.CourseException.CourseAlreadyExists;
+import com.flipkart.exception.CourseException.CourseAlreadyHasStudents;
+import com.flipkart.exception.CourseException.CourseIndexInvalidException;
+import com.flipkart.exception.CourseException.CourseNotFoundFromCourseID;
+import com.flipkart.exception.ProfessorException.AreNotTeachingThisCourseException;
+import com.flipkart.exception.ProfessorException.CantAbandonSubjectException;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Course;
 import com.flipkart.dao.CourseCatalogDBOperations;
-import com.flipkart.dao.DB;
-import com.flipkart.temporaryDB.OldDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
