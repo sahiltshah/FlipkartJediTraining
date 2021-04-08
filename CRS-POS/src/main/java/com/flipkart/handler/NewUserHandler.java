@@ -1,11 +1,6 @@
 package com.flipkart.handler;
 
-import com.flipkart.bean.SpecialUser;
-import com.flipkart.dao.DB;
 import com.flipkart.service.NewUserRegistrationSystem;
-import com.flipkart.validator.AuthenticationValidator;
-
-import java.util.Scanner;
 
 public class NewUserHandler {
     public void registerNewUser(){

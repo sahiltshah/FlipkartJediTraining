@@ -3,6 +3,7 @@ package com.flipkart.dao;
 import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.bean.Student;
+import com.flipkart.utils.DB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -103,7 +104,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
                     stmt.close();
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
-            }// nothing we can do
+            }
         }
 
 
@@ -149,7 +150,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
-            }// nothing we can do
+            }
             return ans;
         }
     }
@@ -259,7 +260,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
                     stmt.close();
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
-            }// nothing we can do
+            }
             addNewUserToLoginMap(username);
 
         }
@@ -291,7 +292,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
                     stmt.close();
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
-            }// nothing we can do
+            }
         }
 
     }
@@ -320,7 +321,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
                     stmt.close();
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
-            }// nothing we can do
+            }
         }
 
     }
@@ -349,7 +350,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
                     stmt.close();
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
-            }// nothing we can do
+            }
         }
 
     }
@@ -380,7 +381,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
                     stmt.close();
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
-            }// nothing we can do
+            }
         }
 
     }

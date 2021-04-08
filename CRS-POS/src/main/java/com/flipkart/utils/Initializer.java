@@ -1,9 +1,6 @@
 package com.flipkart.utils;
 
 import com.flipkart.bean.SpecialUser;
-import com.flipkart.client.Runner;
-import com.flipkart.dao.DB;
-import com.flipkart.temporaryDB.OldDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

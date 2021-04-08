@@ -1,10 +1,7 @@
 package com.flipkart.service;
 
 import com.flipkart.bean.Professor;
-import com.flipkart.dao.AccountingSystemDBOperations;
 import com.flipkart.dao.AuthenticationOperations;
-import com.flipkart.dao.DB;
-import com.flipkart.handler.UserHandler;
 import com.flipkart.temporaryDB.OldDB;
 import com.flipkart.validator.AuthenticationValidator;
 import org.apache.logging.log4j.LogManager;

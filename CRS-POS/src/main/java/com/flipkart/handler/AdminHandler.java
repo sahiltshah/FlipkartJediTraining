@@ -1,16 +1,10 @@
 package com.flipkart.handler;
 
 
-import com.flipkart.bean.Professor;
-import com.flipkart.bean.Student;
-import com.flipkart.dao.DB;
 import com.flipkart.service.CourseCatalogSystem;
 import com.flipkart.service.NewUserRegistrationSystem;
-import com.flipkart.temporaryDB.OldDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.ArrayList;
 
 import static com.flipkart.utils.ScannerInput.input_obj;
 

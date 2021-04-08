@@ -1,4 +1,4 @@
-package com.flipkart.dao;
+package com.flipkart.utils;
 
 import java.sql.*;
 

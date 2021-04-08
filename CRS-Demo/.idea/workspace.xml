@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="765fa5ba-e14c-4389-b9a6-74b71be12b54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CRS-Demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/CRS-Demo-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/CRS-Demo-1.0-SNAPSHOT/WEB-INF/classes/org/example/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.AppTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.AppTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/javadoc/com/flipkart/dao/DB.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/javadoc/com/flipkart/dao/DB.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/client/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/client/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/AccountingSystemDBOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/AccountingSystemDBOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/AuthenticationOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/AuthenticationOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/CourseCatalogDBOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/CourseCatalogDBOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/utils/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/NotificationSystemDBOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/dao/NotificationSystemDBOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/handler/AdminHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/handler/AdminHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/handler/NewUserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/handler/NewUserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/service/NewUserRegistrationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/service/NewUserRegistrationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/utils/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRS-POS/src/main/java/com/flipkart/utils/Initializer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qsLhiXasWpIPPThXTeRAAsy53q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="765fa5ba-e14c-4389-b9a6-74b71be12b54" name="Default Changelist" comment="" />
+      <created>1617863475589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617863475589</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
