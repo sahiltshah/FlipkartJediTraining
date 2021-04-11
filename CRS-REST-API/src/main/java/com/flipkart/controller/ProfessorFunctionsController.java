@@ -2,8 +2,7 @@ package com.flipkart.controller;
 
 
 import com.flipkart.bean.Course;
-import com.flipkart.bean.Grade;
-import com.flipkart.bean.GradesWrapper;
+import com.flipkart.bean.wrappers.GradesWrapper;
 import com.flipkart.dao.CourseCatalogDBOperations;
 import com.flipkart.global.GlobalVariables;
 import com.flipkart.service.CourseCatalogSystem;

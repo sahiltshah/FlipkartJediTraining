@@ -83,7 +83,6 @@ public class  AuthenticationValidator {
             logger.debug(ex);
             GlobalVariables.appendException(String.valueOf(ex));
 
-
         }
 
         return false;

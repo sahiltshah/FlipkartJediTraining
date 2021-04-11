@@ -1,4 +1,6 @@
-package com.flipkart.bean;
+package com.flipkart.bean.wrappers;
+
+import com.flipkart.bean.Grade;
 
 import java.util.ArrayList;
 

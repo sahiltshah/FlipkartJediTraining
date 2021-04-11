@@ -111,7 +111,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
     public Course getCourseFromCourseId(int pCourseId) {
         logger.info("GetCourseFromCourseId: " + pCourseId);
-        Course ans = new Course();
+        Course ans = new Course("",-1,0,0,-1);
         PreparedStatement stmt = null;
         ResultSet rs = null;
         DB x= DB.getInstance();
@@ -176,8 +176,8 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
             String sql_query = SQLQueriesConstants.MODIFY_COURSE_COUNT;
             stmt = x.conn.prepareStatement(sql_query);
-            stmt.setInt(1,course.getcourseStrength());
-            stmt.setInt(2,course.getcourseId());
+            stmt.setInt(1,course.getCourseStrength());
+            stmt.setInt(2,course.getCourseId());
             stmt.executeUpdate();
 
             logger.info("The course count has been modified!");
@@ -640,10 +640,10 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
             String sql_query = SQLQueriesConstants.ADD_COURSE;
             stmt = x.conn.prepareStatement(sql_query);
-            stmt.setInt(1, course.getcourseId());
-            stmt.setString(2, course.getcourseName());
-            stmt.setInt(3,course.getcourseStrength());
-            stmt.setFloat(4,course.getcourseCost());
+            stmt.setInt(1, course.getCourseId());
+            stmt.setString(2, course.getCourseName());
+            stmt.setInt(3,course.getCourseStrength());
+            stmt.setFloat(4,course.getCourseCost());
             stmt.setInt(5,course.getFacultyId());
             stmt.executeUpdate();
 

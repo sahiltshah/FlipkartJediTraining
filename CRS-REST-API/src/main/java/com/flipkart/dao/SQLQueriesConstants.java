@@ -15,7 +15,7 @@ public class SQLQueriesConstants {
     public static final String MODIFY_COURSE_COUNT = "UPDATE courses SET courseStrength=(?) WHERE courseId=(?)";
     public static final String MODIFY_COURSE_FACULTY = "UPDATE courses SET facultyId=(?) WHERE courseId=(?)";
     public static final String GET_FACULTY_COURSES = "SELECT* FROM courses WHERE facultyId = (?)";
-    public static final String ADD_COURSE = "INSERT INTO courses VALUES(?,?,?,?)";
+    public static final String ADD_COURSE = "INSERT INTO courses VALUES(?,?,?,?,?)";
     public static final String REMOVE_COURSE = "DELETE FROM courses WHERE courseId=(?)";
 
     //courseMaps table

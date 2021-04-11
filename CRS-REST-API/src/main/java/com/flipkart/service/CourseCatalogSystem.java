@@ -46,6 +46,16 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
 
     }
 
+    public void removeCourse(int courseId) {
+        CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
+        if(new CourseCatalogValidator().checkCourseDeletable(courseId))
+            courseCatalogDBOperations.deleteCourseFromDB(courseId);
+        else{
+            logger.debug("course invalidated");
+        }
+
+    }
+
 
     public void showAllCourses(){
     System.out.println("All the courses are: ");
@@ -61,10 +71,10 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
         Course course = courseCatalogValidator.checkCourseExists(courseMap.courseId);
         CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
         try{
-            if(course.getcourseId()!=-1){
-                if(course.getcourseStrength()<10){
+            if(course.getCourseId()!=-1){
+                if(course.getCourseStrength()<10){
                     courseCatalogDBOperations.addCourseMap(courseMap);
-                    course.setcourseStrength(course.getcourseStrength()+1);
+                    course.setCourseStrength(course.getCourseStrength()+1);
                     courseCatalogDBOperations.modifyCourseCount(course);
                 }
                 else throw new CourseAlreadyFullException();
@@ -111,7 +121,7 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
 
 
             Course course = courseCatalogDBOperations.getCourseFromCourseId(courseId);
-            if(course.getcourseId()==-1)
+            if(course.getCourseId()==-1)
                 throw new CourseIndexInvalidException();
             else if (course.getFacultyId()!=-1)
                 throw new CourseAlreadyHasFaculty();
@@ -223,6 +233,18 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
         if(new CourseCatalogValidator().checkCourseId(courseId))
             new CourseCatalogDBOperations().addCourse(course);
     }
+
+    public void addCourse(Course course) {
+        if(new CourseCatalogValidator().checkCourseId(course.getCourseId()))
+            new CourseCatalogDBOperations().addCourse(course);
+        else{
+            GlobalVariables.appendException("invalid input courseID");
+            logger.debug("invalid input courseID");
+        }
+
+    }
+
+
 }
 
 

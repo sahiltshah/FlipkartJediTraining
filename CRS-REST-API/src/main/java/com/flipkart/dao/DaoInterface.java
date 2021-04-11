@@ -59,9 +59,8 @@ public class DaoInterface {
 
         /**
          * @param username Username that is de-facto registered
-         * @param studentId The new RollNumber assigned to the student by the Admin
          */
-        public void addStudentType(String username,int studentId);
+        public void addStudentType(String username);
 
         public ArrayList<String> getUnregisteredUsers();
 

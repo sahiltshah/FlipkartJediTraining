@@ -4,6 +4,7 @@ import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.bean.Student;
 import com.flipkart.global.GlobalVariables;
+import com.flipkart.service.NotificationSystem;
 import com.flipkart.utils.DB;
 import org.apache.log4j.Logger;
 
@@ -11,6 +12,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import static com.flipkart.global.GlobalVariables.globalRollNumber;
 
 public class AuthenticationOperations implements DaoInterface.AuthenticationSystemDBFunctions {
     public static final Logger logger = Logger.getLogger(AuthenticationOperations.class);
@@ -367,7 +370,8 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
     }
 
-    public void addStudentType(String username,int studentId) {
+    public void addStudentType(String username) {
+        int studentId = globalRollNumber++;
         logger.info("Modifying the user type");
         PreparedStatement stmt = null;
         DB db= DB.getInstance();
@@ -394,6 +398,8 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
             }
+
+            new NotificationSystem().addStudentNotification("You have been registered",globalRollNumber-1);
         }
 
     }
@@ -495,7 +501,36 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            logger.error(e.getMessage());
+            logger.error(e);
+        } finally {
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+                logger.error("SQL Exception: "+se2.getMessage());
+            }
+        }
+
+    }
+
+
+    public void addNewProfessor(int facultyId){
+        logger.info("add faculty to table");
+        PreparedStatement stmt = null;
+        DB db= DB.getInstance();
+
+        try {
+            if (db.conn == null)
+                throw new ConnectionNotMadeYetException();
+
+            String sql_query = SQLQueriesConstants.ADD_PROFESSOR;
+            stmt = db.conn.prepareStatement(sql_query);
+            stmt.setInt(1,facultyId);
+            stmt.executeUpdate();
+
+
+        } catch (ConnectionNotMadeYetException | SQLException e) {
+            logger.error(e);
         } finally {
             try {
                 if (stmt != null)

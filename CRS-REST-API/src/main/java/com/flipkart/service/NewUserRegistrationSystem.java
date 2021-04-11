@@ -45,8 +45,8 @@ public class NewUserRegistrationSystem {
                 case 0: authenticationOperations.removeUsernameFromLoginMap(name);
                         authenticationOperations.removeUsernameFromLoginDetails(name);
                     break;
-                case 1: authenticationOperations.addStudentType(name,globalRollNumber++);
-                        new NotificationSystem().addStudentNotification("You have been registered",globalRollNumber-1);
+                case 1: authenticationOperations.addStudentType(name);
+
                     break;
             }
         }
@@ -75,6 +75,30 @@ public class NewUserRegistrationSystem {
                 System.out.println("Username input error!");
                 logger.error("Username input error!");
             }
+
+
+    }
+
+    public int addProfessor(String username, String password){
+        System.out.println("Enter the professor details: ");
+        int newFacultyId = GlobalVariables.globalFacultyId++;
+        Professor new_professor = new Professor(newFacultyId);
+
+        if(new AuthenticationValidator().userNameDoesNotExist(username)){
+            AuthenticationOperations authenticationOperations = new AuthenticationOperations();
+
+            authenticationOperations.registerNewUserInDB(username,password);
+            authenticationOperations.addNewProfessorToLoginMap(username,newFacultyId);
+            authenticationOperations.addNewProfessor(newFacultyId);
+            return newFacultyId;
+
+        }
+        else{
+            System.out.println("Username input error!");
+            logger.error("Username input error!");
+            GlobalVariables.appendException("Username input error!");
+            return -1;
+        }
 
 
     }

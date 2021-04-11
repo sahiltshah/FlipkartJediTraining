@@ -25,7 +25,7 @@ public class AccountingSystem implements serviceInterface.AccountingSystemFuncti
             CourseCatalogDBOperations courseCatalogDBOperations=new CourseCatalogDBOperations();
             ArrayList<Integer> courseIds = courseCatalogDBOperations.getCoursesFromStudent(studentIndex);
             for(int courseId : courseIds){
-                totalAmount += courseCatalogDBOperations.getCourseFromCourseId(courseId).getcourseCost();
+                totalAmount += courseCatalogDBOperations.getCourseFromCourseId(courseId).getCourseCost();
             }
         } catch (Exception ex) {
             logger.debug(ex);

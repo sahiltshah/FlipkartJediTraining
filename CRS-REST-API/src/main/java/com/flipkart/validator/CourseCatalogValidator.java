@@ -44,7 +44,7 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
         CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
         ArrayList<Course> courses = courseCatalogDBOperations.getAllCourses();
         for(Course course : courses)
-            if(course.getcourseId()==courseId)
+            if(course.getCourseId()==courseId)
                 return course;
         return new Course("",-1,-1,-1,-1);
     }
@@ -59,9 +59,9 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
 
         try {
             Course course = new CourseCatalogDBOperations().getCourseFromCourseId(courseId);
-            if(course.getcourseId()==-1)
+            if(course.getCourseId()==-1)
                 throw new CourseNotFoundFromCourseID();
-            else if(course.getcourseStrength()==0)
+            else if(course.getCourseStrength()!=0)
                 throw new CourseAlreadyHasStudents();
                 return true;
         } catch (CourseNotFoundFromCourseID ex) {
@@ -80,8 +80,8 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
     public boolean dropCourseCheck(int courseId, ArrayList<Course> courses){
         try {
             for(Course course : courses){
-                if(course.getcourseId() == courseId){
-                    if(course.getcourseStrength()==0)
+                if(course.getCourseId() == courseId){
+                    if(course.getCourseStrength()==0)
                         return true;
                     else
                         throw new CantAbandonSubjectException();
@@ -103,7 +103,7 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
             System.out.println("CourseID: " + courseId);
             System.out.println("professor ID: " + professorId);
             for(Course course : courses){
-                if(course.getcourseId() == courseId){
+                if(course.getCourseId() == courseId){
                     if(course.getFacultyId()==professorId){
                         return true;
                     }
@@ -131,7 +131,7 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
     public boolean checkCourseId(int courseId){
         try {
             Course course = new CourseCatalogDBOperations().getCourseFromCourseId(courseId);
-            if(course.getcourseId()!=-1)
+            if(course.getCourseId()!=-1)
                 throw new CourseAlreadyExists();
             else
                 return true;
