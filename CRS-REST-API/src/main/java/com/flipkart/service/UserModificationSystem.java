@@ -27,9 +27,14 @@ public class UserModificationSystem implements serviceInterface.userFunctions {
         return(AuthenticationValidator.authenticate(userName,password));
     }
 
+    public SpecialUser login(String username,String password) {
+
+        return(AuthenticationValidator.authenticate(username,password));
+    }
+
 
     @Override
-    public void change_password(int studentId,String newPassword) {
+    public void change_password(int studentId, String newPassword) {
         try {
             AuthenticationOperations authenticationOperations = new AuthenticationOperations();
             Scanner sc = new Scanner(System.in);

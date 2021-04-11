@@ -55,7 +55,7 @@ public class AdminFunctionsController {
     }
 
 
-    @POST
+    @DELETE
     @Path("/removeUser/{username}")
     public Response removeUnregisteredUser(@PathParam("username") String username){
         AuthenticationOperations authenticationOperations = new AuthenticationOperations();

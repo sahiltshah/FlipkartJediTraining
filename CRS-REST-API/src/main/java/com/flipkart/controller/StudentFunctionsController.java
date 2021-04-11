@@ -115,7 +115,7 @@ public class StudentFunctionsController {
         }
     }
 
-    @GET
+    @POST
     @Path("/payBill/{studentId}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
@@ -152,7 +152,7 @@ public class StudentFunctionsController {
 
     }
 
-    @GET
+    @PUT
     @Path("/changePassword/{studentId}/{newPassword}")
     public Response changePassword(@PathParam("studentId") int studentId,@PathParam("newPassword") String newPassword){
 
