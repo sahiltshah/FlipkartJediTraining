@@ -2,6 +2,7 @@ package com.flipkart.client;
 
 import com.flipkart.bean.CourseMap;
 import com.flipkart.dao.CourseCatalogDBOperations;
+import com.flipkart.global.GlobalVariables;
 import com.flipkart.utils.DB;
 import com.flipkart.handler.UserHandler;
 import com.flipkart.utils.Initializer;
@@ -46,6 +47,8 @@ public class Runner {
         }
         catch (Exception ex){
             ex.getMessage();
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
         finally {
             DB x = DB.getInstance();

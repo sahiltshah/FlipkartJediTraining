@@ -3,6 +3,7 @@ package com.flipkart.dao;
 import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Transaction;
+import com.flipkart.global.GlobalVariables;
 import com.flipkart.utils.DB;
 import org.apache.log4j.Logger;
 
@@ -43,7 +44,8 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         } catch (ConnectionNotMadeYetException e) {
-            logger.error(e.getMessage());
+            logger.debug(e);
+            GlobalVariables.appendException(String.valueOf(e));
         } finally {
             try { if (rs != null) rs.close();
                 logger.info("Closed rs");
@@ -55,7 +57,8 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
                     stmt.close();
 
             } catch (SQLException ex) {
-                logger.error(ex.getMessage());
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }
             return ans;
         }
@@ -85,7 +88,8 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException ex) {
-                logger.info(ex.getMessage());
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }
         }
 
@@ -117,7 +121,8 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException ex) {
-                logger.error(ex.getMessage());
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }
         }
 

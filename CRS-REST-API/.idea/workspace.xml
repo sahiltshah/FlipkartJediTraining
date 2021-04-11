@@ -10,381 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7b871de-011d-4536-9e65-a0449ca5bb93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CRS_REST_API_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CRS_REST_API_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_bundle_1_18_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRS-REST-API.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proper.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/CourseMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/DebitCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Grade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/SpecialUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/unused/AdminDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/unused/Dashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/unused/NonRegisteredDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/unused/ProfessorDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/unused/StudentDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/CourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/example/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/example/CustomerRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/example/HelloWorldController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/example/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AccountingSystemDBOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AuthenticationOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/CourseCatalogDBOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/DaoInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/NotificationSystemDBOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/SQLQueriesConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/AuthenticationException/InvalidLoginInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/AuthenticationException/UserDoesNotExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/AuthenticationException/UserIDMapDoesNotExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/AuthenticationException/UsernIDAlreadyInUse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/AuthenticationException/WrongPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/BankingException/DebitCardInvalid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/BankingException/InsufficientBalanceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseAlreadyExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseAlreadyFullException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseAlreadyHasFaculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseAlreadyHasStudents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseIndexInvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseMapNeverExisted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/CourseException/CourseNotFoundFromCourseID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/DbException/ConnectionNotMadeYetException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/ProfessorException/AreNotTeachingThisCourseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/ProfessorException/CantAbandonSubjectException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/StudentException/StudentIndexInvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/exception/StudentException/UnapprovedStudentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/AdminHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/HandlerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/NewUserHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/ProfessorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/StudentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/UserHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/AccountingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/CourseCatalogSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NewUserRegistrationSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NotificationSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/UserModificationSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/serviceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/temporaryDB/OldDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/DbUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/DebitCardInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/Initializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/ScannerInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/ScreenWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/AuthenticationValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/CourseCatalogValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/ProfessorValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/helperInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-1.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jackson-xc-1.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jersey-bundle-1.18.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jersey-json-1.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jettison-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/jsr311-api-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0-2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoJersey6/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoJersey6/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoJersey6/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demoJersey6/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRS/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/artifacts/demoJersey2_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/artifacts/demoJersey2_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_json_bind_javax_json_bind_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_json_javax_json_api_1_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_jws_javax_jws_api_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_xml_soap_javax_xml_soap_api_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__javax_xml_ws_jaxws_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_5_0_b42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_5_0_b42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_5_0_b42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_jersey_inject_jersey_hk2_2_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_javassist_javassist_3_22_0_CR2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/demoJersey2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/src/main/java/com/example/demoJersey2/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/src/main/java/com/example/demoJersey2/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/src/main/java/com/example/demoJersey2/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/src/main/java/com/flipkart/controller/RestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/classes/com/example/demoJersey2/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/classes/com/example/demoJersey2/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/classes/com/example/demoJersey2/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/classes/com/flipkart/controller/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/classes/com/example/demoJersey2/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/classes/com/example/demoJersey2/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/classes/com/example/demoJersey2/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-repackaged-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/hk2-api-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/hk2-locator-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/hk2-utils-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.22.0-CR2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-2.5.0-b42.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-2.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/jersey-common-2.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-2.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-core-2.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/jersey-hk2-2.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/jersey-media-jaxb-2.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/jersey-server-2.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/demoJersey2-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/artifacts/demoJersey3_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/artifacts/demoJersey3_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__javax_json_bind_javax_json_bind_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet___jersey2_version_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client___jersey2_version_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server___jersey2_version_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/demoJersey3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.ejb.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.jms.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.persistence.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.resource.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.servlet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.servlet.jsp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/lib/javax.transaction.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/src/main/java/com/example/demoJersey3/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/src/main/java/com/example/demoJersey3/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/src/main/java/com/example/demoJersey3/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/src/main/java/com/flipkart/controller/RestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/classes/com/example/demoJersey3/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/classes/com/example/demoJersey3/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/classes/com/example/demoJersey3/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/classes/com/flipkart/controller/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/classes/com/example/demoJersey3/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/classes/com/example/demoJersey3/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/classes/com/example/demoJersey3/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-repackaged-2.4.0-b31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/hk2-api-2.4.0-b31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/hk2-locator-2.4.0-b31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/hk2-utils-2.4.0-b31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.18.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-2.4.0-b31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-2.22.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/jersey-common-2.22.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-2.22.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-core-2.22.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/jersey-guava-2.22.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/jersey-media-jaxb-2.22.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/jersey-server-2.22.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/demoJersey3-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey3/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/artifacts/demoJersey4_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/artifacts/demoJersey4_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__com_sun_jersey_jersey_bundle_1_18_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/demoJersey4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/src/main/java/com/example/demoJersey4/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/src/main/java/com/example/demoJersey4/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey4/src/main/java/com/example/jersey/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/artifacts/demoJersey5_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/artifacts/demoJersey5_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__com_sun_jersey_jersey_bundle_1_18_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/demoJersey5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/src/main/java/com/example/jersey/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/src/main/java/com/example/jersey/CustomerRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/src/main/java/com/example/jersey/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/classes/com/example/jersey/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/classes/com/example/jersey/CustomerRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/classes/com/example/jersey/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/classes/com/example/jersey/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/classes/com/example/jersey/CustomerRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/classes/com/example/jersey/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-1.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jackson-xc-1.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jersey-bundle-1.18.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jersey-json-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jettison-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/jsr311-api-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0-2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey5/target/demoJersey5-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey6/.idea/artifacts/demoJersey6_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demoJersey6/.idea/artifacts/demoJersey6_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey6/demoJersey6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../demoJersey6/demoJersey6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoJersey6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demoJersey6/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/DebitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/DebitCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/client/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AccountingSystemDBOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AccountingSystemDBOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AuthenticationOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AuthenticationOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/StudentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/StudentHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/AccountingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/AccountingSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/CourseCatalogSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/CourseCatalogSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NewUserRegistrationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NewUserRegistrationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NotificationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NotificationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/UserModificationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/UserModificationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/serviceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/serviceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/temporaryDB/OldDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/global/GlobalVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/AuthenticationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/AuthenticationValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/CourseCatalogValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/CourseCatalogValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/DebitCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/DebitCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/Professor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/client/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/client/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AccountingSystemDBOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AccountingSystemDBOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AuthenticationOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AuthenticationOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/CourseCatalogDBOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/CourseCatalogDBOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/NotificationSystemDBOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/NotificationSystemDBOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/AdminHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/AdminHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/StudentHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/StudentHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/UserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/UserHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/AccountingSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/AccountingSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/CourseCatalogSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/CourseCatalogSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NewUserRegistrationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NewUserRegistrationSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NotificationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NotificationSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/UserModificationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/UserModificationSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/serviceInterface$userFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/serviceInterface$userFunctions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/temporaryDB/OldDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/DB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/Initializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/AuthenticationValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/AuthenticationValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/CourseCatalogValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/CourseCatalogValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -573,6 +239,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617953766893</updated>
       <workItem from="1617953768412" duration="14681000" />
+      <workItem from="1618138554011" duration="9367000" />
     </task>
     <servers />
   </component>
@@ -589,5 +256,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

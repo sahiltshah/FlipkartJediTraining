@@ -2,12 +2,17 @@ package com.flipkart.service;
 import com.flipkart.exception.AuthenticationException.UserDoesNotExistException;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.dao.AuthenticationOperations;
+import com.flipkart.global.GlobalVariables;
 import com.flipkart.validator.AuthenticationValidator;
+import org.apache.log4j.Logger;
 
 import java.util.Scanner;
 
 
 public class UserModificationSystem implements serviceInterface.userFunctions {
+
+    public static final Logger logger = Logger.getLogger(UserModificationSystem.class);
+
 
 
     @Override
@@ -24,7 +29,7 @@ public class UserModificationSystem implements serviceInterface.userFunctions {
 
 
     @Override
-    public void change_password(int studentId) {
+    public void change_password(int studentId,String newPassword) {
         try {
             AuthenticationOperations authenticationOperations = new AuthenticationOperations();
             Scanner sc = new Scanner(System.in);
@@ -32,12 +37,12 @@ public class UserModificationSystem implements serviceInterface.userFunctions {
             if (userName.equals(""))
                 throw new UserDoesNotExistException();
 
-            System.out.println("Enter the new password: ");
-            String newPassword = sc.nextLine();
+
 
             authenticationOperations.changePassword(userName, newPassword);
-        } catch (UserDoesNotExistException e) {
-            e.printStackTrace();
+        } catch (UserDoesNotExistException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
 
     }

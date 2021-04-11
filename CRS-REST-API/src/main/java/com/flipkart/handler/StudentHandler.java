@@ -56,7 +56,11 @@ public class StudentHandler {
                     break;
                 case 3:
                     courseCatalogSystem.showStudentCourses(studentId);
-                    courseCatalogSystem.dropLateralCourse(studentId);
+                    System.out.println("Enter the courseId you wish to delete: ");
+                    Scanner sc1= new Scanner(System.in);
+                    courseId = sc1.nextInt();
+                    CourseMap courseMap1= new CourseMap(studentId,courseId);
+                    courseCatalogSystem.dropLateralCourse(courseMap1);
                     break;
 
                 case 4:
@@ -71,7 +75,10 @@ public class StudentHandler {
                     courseCatalogSystem.showStudentGrades(studentId);
                     break;
                 case 6:
-                    new UserModificationSystem().change_password(studentId);
+                    Scanner sc2= new Scanner(System.in);
+                    System.out.println("Enter the new password: ");
+                    String newPassword = sc2.nextLine();
+                    new UserModificationSystem().change_password(studentId,newPassword);
                     break;
                 case 7: new NotificationSystem().viewStudentNotifications(studentId);
                     break;

@@ -2,6 +2,7 @@ package com.flipkart.validator;
 import com.flipkart.exception.AuthenticationException.*;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.dao.AuthenticationOperations;
+import com.flipkart.global.GlobalVariables;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -20,9 +21,12 @@ public class  AuthenticationValidator {
             }
 
         }
-        catch (InvalidLoginInputException e) {
+        catch (InvalidLoginInputException ex) {
             System.out.println("Username or password is invalid length");
-            logger.debug(e.getMessage());
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
+
+
             return specialUser;
         }
 
@@ -53,12 +57,14 @@ public class  AuthenticationValidator {
 
         }
 
-        catch (UserDoesNotExistException e) {
+        catch (UserDoesNotExistException ex) {
             System.out.println("The username you enterred doesn't exist in our records. Try again!");
-            logger.debug(e.getMessage());
-        } catch (WrongPasswordException e) {
-            System.out.println("You enterred the wrong password! Try again");
-            logger.debug(e.getMessage());
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
+        } catch (WrongPasswordException ex) {
+            System.out.println("You entered the wrong password! Try again");
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } catch (UserIDMapDoesNotExist userIDMapDoesNotExist) {
             userIDMapDoesNotExist.printStackTrace();
         }
@@ -72,9 +78,10 @@ public class  AuthenticationValidator {
                 return true;
             else
                 throw new UsernIDAlreadyInUse();
-        } catch (UsernIDAlreadyInUse usernIDAlreadyInUse) {
+        } catch (UsernIDAlreadyInUse ex) {
             System.out.println("Username already in use. Try again! ");
-            logger.debug(usernIDAlreadyInUse.getMessage());
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
 
 
         }

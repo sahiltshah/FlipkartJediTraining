@@ -9,7 +9,7 @@ public class serviceInterface {
     static interface userFunctions{
         SpecialUser login();
 
-        void change_password(int studentId);
+        void change_password(int studentId, String newPassword);
 
         void forgot_password();
         void deleteStudent(int studentRollNumber);

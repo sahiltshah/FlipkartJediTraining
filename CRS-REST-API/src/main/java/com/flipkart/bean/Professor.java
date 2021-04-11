@@ -1,7 +1,7 @@
 package com.flipkart.bean;
 
 import java.util.ArrayList;
-import static com.flipkart.temporaryDB.OldDB.globalFacultyId;
+import static com.flipkart.global.GlobalVariables.globalFacultyId;
 
 public class Professor extends User{ //extends User implements ProfessorFunctions
     public Integer getFacultyId() {

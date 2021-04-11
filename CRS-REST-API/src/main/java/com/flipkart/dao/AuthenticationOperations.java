@@ -3,6 +3,7 @@ package com.flipkart.dao;
 import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.SpecialUser;
 import com.flipkart.bean.Student;
+import com.flipkart.global.GlobalVariables;
 import com.flipkart.utils.DB;
 import org.apache.log4j.Logger;
 
@@ -47,14 +48,16 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
         } catch (ConnectionNotMadeYetException | SQLException e) {
-            logger.error(e.getMessage());
+            logger.debug(e);
+            GlobalVariables.appendException(String.valueOf(e));
         }
         finally {
             try {
                 if (rs != null) rs.close();
                 logger.info("Closed rs");
             } catch (Exception e) {
-                logger.error(e.getMessage());
+                logger.debug(e);
+                GlobalVariables.appendException(String.valueOf(e));
             }
 
             try {
@@ -62,6 +65,8 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
                     stmt.close();
             } catch (SQLException se2) {
                 logger.error("SQL Exception: "+se2.getMessage());
+                logger.debug(se2);
+                GlobalVariables.appendException(String.valueOf(se2));
 
             }
             return ans;
@@ -93,20 +98,24 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
             return ans;
 
 
-        } catch (ConnectionNotMadeYetException | SQLException e) {
-            logger.error(e.getMessage());
+        } catch (ConnectionNotMadeYetException | SQLException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
         finally {
             try { if (rs != null) rs.close();
                 logger.info("Closed rs");
-            } catch (Exception e) {
-                logger.error(e.getMessage());
+            } catch (Exception ex) {
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }
             try {
                 if (stmt != null)
                     stmt.close();
-            } catch (SQLException se2) {
-                logger.error("SQL Exception: "+se2.getMessage());
+            } catch (SQLException ex) {
+                logger.error("SQL Exception: "+ex.getMessage());
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }
         }
 

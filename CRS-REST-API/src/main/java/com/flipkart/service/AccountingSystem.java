@@ -6,13 +6,18 @@ import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Transaction;
 import com.flipkart.dao.AccountingSystemDBOperations;
 import com.flipkart.dao.CourseCatalogDBOperations;
+import com.flipkart.global.GlobalVariables;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 
-import static com.flipkart.temporaryDB.OldDB.globalTransactionId;
+import static com.flipkart.global.GlobalVariables.globalTransactionId;
 
 //modules complete all the way down
 public class AccountingSystem implements serviceInterface.AccountingSystemFunctions {
+
+    public static final Logger logger = Logger.getLogger(AccountingSystemDBOperations.class);
+
     @Override
     public float calculateBill(int studentIndex) {
         float totalAmount =0;
@@ -22,8 +27,9 @@ public class AccountingSystem implements serviceInterface.AccountingSystemFuncti
             for(int courseId : courseIds){
                 totalAmount += courseCatalogDBOperations.getCourseFromCourseId(courseId).getcourseCost();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
 
         return totalAmount;
@@ -54,8 +60,12 @@ public class AccountingSystem implements serviceInterface.AccountingSystemFuncti
             }
         } catch (InsufficientBalanceException ex) {
             System.out.println("You are short by the amount: " + ex.getAmount());
-        } catch (DebitCardInvalid debitCardInvalid) {
-            debitCardInvalid.printStackTrace();
+            logger.debug(ex);
+            GlobalVariables.appendException("You are short by the amount: " + ex.getAmount());
+        } catch (DebitCardInvalid ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
+
         }
         return false;
     }

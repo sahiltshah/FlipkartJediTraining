@@ -2,6 +2,9 @@ package com.flipkart.bean;
 
 public class DebitCard {
 
+    public DebitCard() {
+    }
+
     private String cardNumber;
     private Integer cvv;
     private String name;
@@ -9,7 +12,12 @@ public class DebitCard {
 
     public DebitCard(String s) {
         this.cardNumber=s;
+        this.balance = 0;
+        this.cvv = 0;
+        this.name = "";
     }
+
+
 
     public String getCardNumber() {
         return cardNumber;

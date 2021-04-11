@@ -9,6 +9,7 @@ import com.flipkart.exception.ProfessorException.CantAbandonSubjectException;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Course;
 import com.flipkart.dao.CourseCatalogDBOperations;
+import com.flipkart.global.GlobalVariables;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -63,11 +64,13 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
             else if(course.getcourseStrength()==0)
                 throw new CourseAlreadyHasStudents();
                 return true;
-        } catch (CourseNotFoundFromCourseID courseNotFoundFromCourseID) {
-            logger.debug(courseNotFoundFromCourseID.getMessage());
+        } catch (CourseNotFoundFromCourseID ex) {
             System.out.println("CourseNotFoundFromCourseID");
-        } catch (CourseAlreadyHasStudents courseAlreadyHasStudents) {
-            logger.debug(courseAlreadyHasStudents.getMessage());
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
+        } catch (CourseAlreadyHasStudents ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
             System.out.println("courseAlreadyHasStudents");
         }
         return false;
@@ -111,13 +114,15 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
             }
             throw new CourseIndexInvalidException();
         }
-         catch (CourseIndexInvalidException e) {
+         catch (CourseIndexInvalidException ex) {
              System.out.println("The course index you've enterred is invalid");
-             logger.debug(e.getMessage());
+             logger.debug(ex);
+             GlobalVariables.appendException(String.valueOf(ex));
         }
-        catch (AreNotTeachingThisCourseException e){
+        catch (AreNotTeachingThisCourseException ex){
             System.out.println("You aren't teaching this course so can't select it");
-            logger.debug(e.getMessage());
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
         return false;
 

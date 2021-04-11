@@ -9,6 +9,7 @@ import com.flipkart.bean.Course;
 import com.flipkart.bean.CourseMap;
 import com.flipkart.bean.Grade;
 import com.flipkart.dao.CourseCatalogDBOperations;
+import com.flipkart.global.GlobalVariables;
 import com.flipkart.validator.CourseCatalogValidator;
 import org.apache.log4j.Logger;
 
@@ -70,19 +71,19 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
             else throw new CourseNotFoundException();
 
         } catch (CourseAlreadyFullException | CourseNotFoundException e) {
-            logger.debug(e.getMessage());
+            System.out.println("Debugging");
+            logger.debug(e);
+            GlobalVariables.appendException(String.valueOf(e));
         }
 
 
     }
 
-    public void dropLateralCourse(int studentId){
+    public void dropLateralCourse(CourseMap courseMap){
         int courseId;
-        System.out.println("Enter the courseId you wish to delete: ");
-        Scanner sc= new Scanner(System.in);
-        courseId = sc.nextInt();
+
         CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
-        courseCatalogDBOperations.dropCourseMap(new CourseMap(studentId,courseId));
+        courseCatalogDBOperations.dropCourseMap(courseMap);
     }
 
     public void showStudentCourses(int studentId){

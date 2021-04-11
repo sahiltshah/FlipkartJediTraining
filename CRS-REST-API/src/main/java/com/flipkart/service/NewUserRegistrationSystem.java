@@ -2,14 +2,14 @@ package com.flipkart.service;
 
 import com.flipkart.bean.Professor;
 import com.flipkart.dao.AuthenticationOperations;
-import com.flipkart.temporaryDB.OldDB;
+import com.flipkart.global.GlobalVariables;
 import com.flipkart.validator.AuthenticationValidator;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static com.flipkart.temporaryDB.OldDB.globalRollNumber;
+import static com.flipkart.global.GlobalVariables.globalRollNumber;
 
 public class NewUserRegistrationSystem {
     public static final Logger logger = Logger.getLogger(NewUserRegistrationSystem.class);
@@ -56,7 +56,7 @@ public class NewUserRegistrationSystem {
 
     public void addProfessor(){
         System.out.println("Enter the professor details: ");
-        int newFacultyId = OldDB.globalFacultyId++;
+        int newFacultyId = GlobalVariables.globalFacultyId++;
         Professor new_professor = new Professor(newFacultyId);
         String username,password;
             Scanner sc= new Scanner(System.in);
