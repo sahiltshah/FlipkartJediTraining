@@ -1,0 +1,172 @@
+2021-04-09 13:16:24.805 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 13:16:24.811 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 13:16:24.828 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 13:16:24.830 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 13:16:27.098 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-09 13:16:29.692 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-09 13:16:29.692 [main] ERROR com.flipkart.dao.AuthenticationOperations - null
+2021-04-09 13:16:29.693 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-09 13:16:29.693 [main] DEBUG com.flipkart.validator.AuthenticationValidator - null
+2021-04-09 13:16:29.693 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-09 13:18:55.254 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 13:18:55.258 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 13:18:55.258 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 13:18:55.259 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 13:18:58.093 [main] INFO  com.flipkart.utils.DB - Connection has been closed
+2021-04-09 13:19:15.108 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 13:19:15.111 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 13:19:15.112 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 13:19:15.113 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 13:19:16.958 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-09 13:19:19.945 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-09 13:19:19.946 [main] ERROR com.flipkart.dao.AuthenticationOperations - Connection is Null so exiting!
+2021-04-09 13:19:19.946 [main] ERROR com.flipkart.dao.AuthenticationOperations - null
+2021-04-09 13:19:19.946 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-09 13:19:19.946 [main] DEBUG com.flipkart.validator.AuthenticationValidator - null
+2021-04-09 13:19:19.946 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-09 13:20:33.017 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:20:33.020 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:20:33.020 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:20:33.020 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:20:33.020 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:20:33.020 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:20:33.020 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:20:33.020 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 13:20:33.038 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 13:20:33.039 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 13:20:33.045 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 13:20:34.931 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-09 13:20:37.364 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-09 13:20:37.364 [main] ERROR com.flipkart.dao.AuthenticationOperations - Connection is Null so exiting!
+2021-04-09 13:20:37.364 [main] ERROR com.flipkart.dao.AuthenticationOperations - null
+2021-04-09 13:20:37.365 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-09 13:20:37.365 [main] DEBUG com.flipkart.validator.AuthenticationValidator - null
+2021-04-09 13:20:37.365 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-09 13:21:33.439 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:21:33.441 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:21:33.441 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:21:33.441 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:21:33.441 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:21:33.441 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:21:33.441 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 13:21:33.441 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 13:21:33.444 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-09 13:21:33.447 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-09 13:21:33.621 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-09 13:21:33.621 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 13:21:33.635 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 13:21:33.636 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 13:21:36.942 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-09 13:21:39.602 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-09 13:21:39.612 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-09 13:21:39.612 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-09 13:21:39.613 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-09 13:21:39.613 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-09 13:21:39.613 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-09 13:21:39.618 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-09 13:21:51.999 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-09 13:21:52.003 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-09 14:31:06.995 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:06.998 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:06.998 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:06.998 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:06.998 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:06.998 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:06.998 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:06.998 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 14:31:07.001 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-09 14:31:07.005 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-09 14:31:07.203 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-09 14:31:07.203 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 14:31:07.209 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - get all CourseMaps method
+2021-04-09 14:31:07.226 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-09 14:31:07.227 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 14:31:07.230 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 14:31:50.112 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:50.114 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:50.114 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:50.115 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:50.115 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:50.115 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:50.115 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:31:50.115 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 14:31:50.129 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-09 14:31:50.134 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-09 14:31:50.321 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-09 14:31:50.321 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 14:31:50.329 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - get all CourseMaps method
+2021-04-09 14:31:50.337 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-09 14:31:50.338 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 14:31:50.339 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 14:32:12.395 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:32:12.397 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:32:12.397 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:32:12.397 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:32:12.397 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:32:12.397 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:32:12.398 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 14:32:12.398 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 14:32:12.399 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-09 14:32:12.403 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-09 14:32:12.578 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-09 14:32:12.578 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 14:32:12.580 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - get all CourseMaps method
+2021-04-09 14:32:12.590 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-09 14:32:12.590 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 14:32:12.591 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 15:09:38.276 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:09:38.279 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:09:38.279 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:09:38.280 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:09:38.280 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:09:38.280 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:09:38.280 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:09:38.280 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 15:09:38.292 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-09 15:09:38.297 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-09 15:09:38.512 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-09 15:09:38.512 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 15:09:38.540 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - get all CourseMaps method
+2021-04-09 15:09:38.554 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-09 15:09:38.558 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 15:09:38.563 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 15:14:15.001 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:14:15.003 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:14:15.003 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:14:15.003 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:14:15.004 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:14:15.004 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:14:15.004 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:14:15.004 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 15:14:15.006 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-09 15:14:15.010 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-09 15:14:15.195 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-09 15:14:15.195 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 15:14:15.197 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - get all CourseMaps method
+2021-04-09 15:14:15.205 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-09 15:14:15.205 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 15:14:15.206 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 15:19:13.410 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:19:13.413 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:19:13.413 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:19:13.413 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:19:13.413 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:19:13.414 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:19:13.414 [main] ERROR com.flipkart.client.Runner - 
+2021-04-09 15:19:13.414 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-09 15:19:13.415 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-09 15:19:13.418 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-09 15:19:13.602 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-09 15:19:13.602 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-09 15:19:13.604 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - get all CourseMaps method
+2021-04-09 15:19:13.612 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-09 15:19:13.613 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-09 15:19:13.614 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-09 15:19:21.319 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-09 15:20:36.555 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-09 15:20:36.556 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-09 15:20:36.556 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-09 15:20:36.558 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-09 15:20:36.559 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-09 15:20:36.559 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-09 15:20:36.560 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu

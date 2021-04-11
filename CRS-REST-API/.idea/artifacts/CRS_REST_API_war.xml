@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CRS-REST-API:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CRS-REST-API</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CRS-REST-API-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CRS-REST-API:war exploded" />
+    </root>
+  </artifact>
+</component>
