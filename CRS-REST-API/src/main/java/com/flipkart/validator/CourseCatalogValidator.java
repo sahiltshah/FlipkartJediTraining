@@ -89,10 +89,10 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
                 }
             }
             throw new CourseIndexInvalidException();
-        } catch (CantAbandonSubjectException e) {
-            e.printStackTrace();
-        } catch (CourseIndexInvalidException e) {
-            e.printStackTrace();
+        } catch (CantAbandonSubjectException | CourseIndexInvalidException ex) {
+            System.out.println(ex);
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
         return false;
 
@@ -135,8 +135,11 @@ public class CourseCatalogValidator implements helperInterface.CourseValidatorFu
                 throw new CourseAlreadyExists();
             else
                 return true;
-        } catch (CourseAlreadyExists courseAlreadyExists) {
-            courseAlreadyExists.printStackTrace();
+        } catch (CourseAlreadyExists ex) {
+            System.out.println(ex);
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
+
         }
         return false;
     }

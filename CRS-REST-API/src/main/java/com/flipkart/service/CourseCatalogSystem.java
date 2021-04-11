@@ -13,6 +13,7 @@ import com.flipkart.global.GlobalVariables;
 import com.flipkart.validator.CourseCatalogValidator;
 import org.apache.log4j.Logger;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -104,13 +105,11 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
         }
     }
 
-    public void facultyAddCourse(int professorId){
+    public void facultyAddCourse(int professorId,int courseId){
         CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
         try {
-            showAllCourses();
-            System.out.println("Enter a courseId that does not have already have a faculty");
-            Scanner sc= new Scanner(System.in);
-            int courseId = sc.nextInt();
+
+
             Course course = courseCatalogDBOperations.getCourseFromCourseId(courseId);
             if(course.getcourseId()==-1)
                 throw new CourseIndexInvalidException();
@@ -120,21 +119,20 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
                 courseCatalogDBOperations.addFaculty(professorId,courseId);
         } catch (CourseAlreadyHasFaculty courseAlreadyHasFaculty) {
             courseAlreadyHasFaculty.printStackTrace();
-        } catch (CourseIndexInvalidException e) {
-            e.printStackTrace();
+        } catch (CourseIndexInvalidException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
 
     }
 
-    public void facultyDropCourse(int professorId){
+    public void facultyDropCourse(int professorId,int courseId){
         CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
         ArrayList<Course> courses =courseCatalogDBOperations.getFacultyCourses(professorId);
         for(Course course : courses){
             course.printCourse();
         }
-        System.out.println("Enter a courseId that you would like to opt out of teaching: ");
-        Scanner sc= new Scanner(System.in);
-        int courseId = sc.nextInt();
+
         if(new CourseCatalogValidator().dropCourseCheck(courseId,courses)){
             courseCatalogDBOperations.dropFacultyCourse(courseId);
         }
@@ -169,25 +167,47 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
             }
             courseCatalogDBOperations.addStudentGrades(grades);
         }
-        else
-            System.out.println("courseId entered is not valid!");
+        else{
+            logger.debug("courseId entered is not valid!");
+            GlobalVariables.appendException("courseId entered is not valid!");
+
+        }
+
     }
 
-    public void viewGrades(int professorId){
+    public void addGrades(int professorId,ArrayList<Grade> grades,int courseId){
+        CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
+
+        ArrayList<Course> courses =courseCatalogDBOperations.getFacultyCourses(professorId);
+
+        CourseCatalogValidator courseCatalogValidator = new CourseCatalogValidator();
+        if(courseCatalogValidator.checkTaughtCourse(courseId,courses,professorId)){
+            courseCatalogDBOperations.addStudentGrades(grades);
+        }
+        else{
+            logger.debug("courseId entered is not valid!");
+            GlobalVariables.appendException("courseId entered is not valid!");
+
+        }
+
+    }
+
+
+    public ArrayList<Grade> viewGrades(int professorId,int courseId){
         CourseCatalogDBOperations courseCatalogDBOperations = new CourseCatalogDBOperations();
         ArrayList<Course> courses =courseCatalogDBOperations.getFacultyCourses(professorId);
         System.out.println("These are your courses: ");
         for(Course course : courses)
             course.printCourse();
-        System.out.println("Enter a courseId that you would like to see+search the grade of: ");
-        Scanner sc= new Scanner(System.in);
-        int courseId = sc.nextInt();
         if(new CourseCatalogValidator().checkTaughtCourse(courseId,courses,professorId)){
             System.out.println("Printing grades: ");
             ArrayList<Grade> grades = courseCatalogDBOperations.getSubjectGrades(courseId);
             for(Grade grade : grades)
                 grade.printGrade();
+            return grades;
         }
+
+        return null;
 
     }
 

@@ -19,7 +19,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
-@Path("/course")
+@Path("/student")
 public class StudentFunctionsController {
 
     private static final Logger logger = Logger.getLogger(StudentFunctionsController.class);

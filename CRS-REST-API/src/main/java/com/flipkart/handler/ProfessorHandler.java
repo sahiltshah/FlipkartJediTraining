@@ -2,6 +2,8 @@ package com.flipkart.handler;
 
 import com.flipkart.service.CourseCatalogSystem;
 
+import java.util.Scanner;
+
 import static com.flipkart.utils.ScannerInput.input_obj;
 
 public class ProfessorHandler {
@@ -24,16 +26,26 @@ public class ProfessorHandler {
 
             switch (choice) {
                 case 1:
-                    courseCatalogSystem.facultyAddCourse(professorId);
+                    courseCatalogSystem.showAllCourses();
+                    System.out.println("Enter a courseId that does not have already have a faculty");
+                    Scanner sc= new Scanner(System.in);
+                    int courseId = sc.nextInt();
+                    courseCatalogSystem.facultyAddCourse(professorId,courseId);
                     break;
                 case 2:
-                    courseCatalogSystem.facultyDropCourse(professorId);
+                    System.out.println("Enter a courseId that you would like to opt out of teaching: ");
+                    Scanner sc2= new Scanner(System.in);
+                    int courseId2 = sc2.nextInt();
+                    courseCatalogSystem.facultyDropCourse(professorId,courseId2);
                     break;
                 case 3:
                     courseCatalogSystem.addGrades(professorId);
                     break;
                 case 4:
-                    courseCatalogSystem.viewGrades(professorId);
+                    System.out.println("Enter a courseId that you would like to see+search the grade of: ");
+                    Scanner sc1= new Scanner(System.in);
+                    int courseId1 = sc1.nextInt();
+                    courseCatalogSystem.viewGrades(professorId,courseId1);
                     break;
                 case 5:
                     break;

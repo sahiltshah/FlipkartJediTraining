@@ -10,47 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7b871de-011d-4536-9e65-a0449ca5bb93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/GradesWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/ProfessorFunctionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/DebitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/DebitCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/client/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/client/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AccountingSystemDBOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AccountingSystemDBOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AuthenticationOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/dao/AuthenticationOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/StudentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/StudentHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/AccountingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/AccountingSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/bean/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/StudentFunctionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/StudentFunctionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/ProfessorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/handler/ProfessorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/CourseCatalogSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/CourseCatalogSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NewUserRegistrationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NewUserRegistrationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NotificationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/NotificationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/UserModificationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/UserModificationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/serviceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/serviceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/temporaryDB/OldDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/global/GlobalVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/AuthenticationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/AuthenticationValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/CourseCatalogValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/CourseCatalogValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/DebitCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/DebitCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/Professor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/client/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/client/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AccountingSystemDBOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AccountingSystemDBOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AuthenticationOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/AuthenticationOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/CourseCatalogDBOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/CourseCatalogDBOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/NotificationSystemDBOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/dao/NotificationSystemDBOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/AdminHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/AdminHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/StudentHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/StudentHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/UserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/UserHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/AccountingSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/AccountingSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/Grade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/Grade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/CourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/ProfessorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/handler/ProfessorHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/CourseCatalogSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/CourseCatalogSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NewUserRegistrationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NewUserRegistrationSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NotificationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/NotificationSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/UserModificationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/UserModificationSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/serviceInterface$userFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/serviceInterface$userFunctions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/temporaryDB/OldDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/DB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/utils/Initializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/AuthenticationValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/AuthenticationValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/CourseCatalogValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/CourseCatalogValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/bean/Grade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/bean/Grade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/controller/CourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/handler/ProfessorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/handler/ProfessorHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/service/CourseCatalogSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/service/CourseCatalogSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/validator/CourseCatalogValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/validator/CourseCatalogValidator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +216,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617953766893</updated>
       <workItem from="1617953768412" duration="14681000" />
-      <workItem from="1618138554011" duration="9367000" />
+      <workItem from="1618138554011" duration="17013000" />
     </task>
     <servers />
   </component>
