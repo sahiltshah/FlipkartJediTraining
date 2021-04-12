@@ -20,15 +20,15 @@ public class SQLQueriesConstants {
 
     //courseMaps table
     public static final String ADD_COURSE_MAP = "INSERT INTO courseMaps values(?,?)";
-    public static final String DROP_COURSE_MAP = "DELETE from courseMaps WHERE (student_id=(?) AND course_id=(?))";
-    public static final String GET_STUDENT_COURSES = "SELECT course_id FROM courseMaps WHERE student_id = (?)";
-    public static final String GET_STUDENTS_FROM_COURSE = "SELECT student_id FROM courseMaps WHERE course_id = (?)";
+    public static final String DROP_COURSE_MAP = "DELETE from courseMaps WHERE (studentId=(?) AND courseId=(?))";
+    public static final String GET_STUDENT_COURSES = "SELECT courseId FROM courseMaps WHERE studentId = (?)";
+    public static final String GET_STUDENTS_FROM_COURSE = "SELECT studentId FROM courseMaps WHERE courseId = (?)";
     public static final String GET_ALL_COURSEMAPS = "SELECT* FROM courseMaps";
 
     //grades table
     public static final String ADD_GRADE = "INSERT INTO grades values(?,?,?)";
-    public static final String GET_GRADE = "SELECT* FROM grades WHERE course_id = (?)";
-    public static final String GET_GRADES_FROM_STUDENTID = "SELECT* FROM grades WHERE student_id = (?)";
+    public static final String GET_GRADE = "SELECT* FROM grades WHERE courseId = (?)";
+    public static final String GET_GRADES_FROM_STUDENTID = "SELECT* FROM grades WHERE studentId = (?)";
 
 
     //loginDetails table

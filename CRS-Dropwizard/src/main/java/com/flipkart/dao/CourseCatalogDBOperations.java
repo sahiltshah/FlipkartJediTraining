@@ -383,7 +383,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             //STEP 5: Extract data from result set
             while (rs.next()) {
                 //Retrieve by column name
-                int courseId = rs.getInt("course_id");
+                int courseId = rs.getInt("courseId");
                 ans.add(courseId);
             }
 
@@ -429,7 +429,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             //STEP 5: Extract data from result set
             while (rs.next()) {
                 //Retrieve by column name
-                ans.add(rs.getInt("student_id"));
+                ans.add(rs.getInt("studentId"));
             }
 
             //STEP 6: Clean-up environment
@@ -475,8 +475,8 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             //STEP 5: Extract data from result set
             while (rs.next()) {
                 //Retrieve by column name
-                courseMap.studentId=rs.getInt("student_id");
-                courseMap.courseId=rs.getInt("course_id");
+                courseMap.studentId=rs.getInt("studentId");
+                courseMap.courseId=rs.getInt("courseId");
                 ans.add(courseMap);
             }
 
@@ -527,7 +527,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             //STEP 5: Extract data from result set
             while (rs.next()) {
                 //Retrieve by column name
-                ans.add(new Grade(rs.getInt("student_id"),rs.getInt("course_id"),rs.getString("grade").charAt(0)));
+                ans.add(new Grade(rs.getInt("studentId"),rs.getInt("courseId"),rs.getString("grade").charAt(0)));
             }
 
             //STEP 6: Clean-up environment
@@ -605,7 +605,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             //STEP 5: Extract data from result set
             while (rs.next()) {
                 //Retrieve by column name
-                ans.add(new Grade(rs.getInt("student_id"),rs.getInt("course_id"),rs.getString("grade").charAt(0)));
+                ans.add(new Grade(rs.getInt("studentId"),rs.getInt("courseId"),rs.getString("grade").charAt(0)));
             }
 
             //STEP 6: Clean-up environment
