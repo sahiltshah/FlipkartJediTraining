@@ -41,16 +41,15 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
 
             stmt.close();
 
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } catch (ConnectionNotMadeYetException e) {
-            logger.debug(e);
-            GlobalVariables.appendException(String.valueOf(e));
+        } catch (SQLException | ConnectionNotMadeYetException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } finally {
             try { if (rs != null) rs.close();
                 logger.info("Closed rs");
-            } catch (Exception e) {
-                e.printStackTrace();
+            } catch (Exception ex) {
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }
             try {
                 if (stmt != null)
@@ -81,8 +80,9 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
 
             logger.info("The amount has been debited");
 
-        } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+        } catch (ConnectionNotMadeYetException | SQLException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } finally {
             try {
                 if (stmt != null)
@@ -113,8 +113,9 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
             stmt.executeUpdate();
 
 
-        } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+        } catch (ConnectionNotMadeYetException | SQLException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } finally {
 
             try {

@@ -4,6 +4,7 @@ import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.CourseMap;
 import com.flipkart.bean.Grade;
+import com.flipkart.global.GlobalVariables;
 import com.flipkart.utils.DB;
 import org.apache.log4j.Logger;
 
@@ -47,13 +48,15 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             //STEP 6: Clean-up environment
 
 
-        } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+        } catch (ConnectionNotMadeYetException | SQLException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } finally {
             try { if (rs != null) rs.close();
                 logger.info("Closed rs");
-            } catch (Exception e) {
-                e.printStackTrace();
+            } catch (Exception ex) {
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }
             try {
                 if (stmt != null)
@@ -97,8 +100,9 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
             stmt.close();
 
 
-        } catch (ConnectionNotMadeYetException | SQLException e) {
-            e.printStackTrace();
+        } catch (ConnectionNotMadeYetException | SQLException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } finally {
             try {
                 if (stmt != null)

@@ -149,10 +149,9 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
             stmt.close();
 
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } catch (ConnectionNotMadeYetException e) {
-            logger.error(e.getMessage());
+        } catch (SQLException | ConnectionNotMadeYetException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } finally {
             try { if (rs != null) rs.close();
                 logger.info("Closed rs");

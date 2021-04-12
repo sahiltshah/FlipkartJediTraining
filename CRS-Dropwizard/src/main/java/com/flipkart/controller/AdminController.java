@@ -12,10 +12,19 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+
+
+
+/**
+ * All the Admin functions
+ */
 @Path("/admin")
 public class AdminController {
     private static final Logger logger = Logger.getLogger(AdminController.class);
 
+    /**
+     * @return All the unregistered users in the LoginDetails table is shown via an ArrayList
+     */
     @GET
     @Path("/getUnregisteredUsers")
     @Produces(MediaType.APPLICATION_JSON)
@@ -35,6 +44,10 @@ public class AdminController {
     }
 
 
+    /**
+     * @param username to be registered as a student
+     * @return message on success of the action
+     */
     @POST
     @Path("/registerStudent/{username}")
     public Response registerUserAsStudent(@PathParam("username") String username){
@@ -52,6 +65,10 @@ public class AdminController {
     }
 
 
+    /**
+     * @param username to be exited from the system as it may not be approved
+     * @return a message indicating successful completion of the Delete operation
+     */
     @DELETE
     @Path("/removeUser/{username}")
     public Response removeUnregisteredUser(@PathParam("username") String username){
@@ -69,6 +86,11 @@ public class AdminController {
 
     }
 
+    /**
+     * @param username
+     * @param password
+     * @return
+     */
     @POST
     @Path("/addProfessor/{username}/{password}")
     public Response addProfessor(@PathParam("username") String username, @PathParam("password") String password){
@@ -83,6 +105,10 @@ public class AdminController {
 
     }
 
+    /**
+     * @param course The course to be enterred to the System
+     * @return message of successful completion
+     */
     @POST
     @Path("/addCourse")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -101,6 +127,10 @@ public class AdminController {
     }
 
 
+    /**
+     * @param courseId to be deleted from the System
+     * @return message of successful completion of API call
+     */
     @DELETE
     @Path("/removeCourse/{courseId}")
     public Response removeCourse(@PathParam("courseId") int courseId){

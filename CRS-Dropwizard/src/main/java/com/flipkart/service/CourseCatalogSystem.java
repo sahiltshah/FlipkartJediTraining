@@ -127,9 +127,7 @@ public class CourseCatalogSystem implements serviceInterface.CourseCatalogSystem
                 throw new CourseAlreadyHasFaculty();
             else
                 courseCatalogDBOperations.addFaculty(professorId,courseId);
-        } catch (CourseAlreadyHasFaculty courseAlreadyHasFaculty) {
-            courseAlreadyHasFaculty.printStackTrace();
-        } catch (CourseIndexInvalidException ex) {
+        } catch (CourseAlreadyHasFaculty | CourseIndexInvalidException ex) {
             logger.debug(ex);
             GlobalVariables.appendException(String.valueOf(ex));
         }

@@ -192,6 +192,10 @@ public class StudentController {
         }
     }
 
+    /**
+     * @param studentId for which the password needs to be changed
+     * @return message on successful change of password
+     */
     @GET
     @Path("notifications/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)

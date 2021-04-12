@@ -2,6 +2,7 @@ package com.flipkart.utils;
 
 import java.sql.*;
 
+import com.flipkart.global.GlobalVariables;
 import org.apache.log4j.Logger;
 
 public class DB {
@@ -49,8 +50,9 @@ public class DB {
             logger.info("Connection has been made");
 
 
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
+        } catch (ClassNotFoundException | SQLException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
 
 
@@ -61,16 +63,18 @@ public class DB {
 
         try {
             conn.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException ex) {
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         } finally {
             //finally block used to close resources
 
             try {
                 if (conn != null)
                     conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
+            } catch (SQLException ex) {
+                logger.debug(ex);
+                GlobalVariables.appendException(String.valueOf(ex));
             }//end finally try
         }//end try
         System.out.println("Goodbye!");

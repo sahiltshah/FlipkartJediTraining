@@ -17,7 +17,11 @@ public class UserController {
     private static final Logger logger = Logger.getLogger(UserController.class);
 
 
-
+    /**
+     * @param username Username of the user
+     * @param password of the user
+     * @return message indicating if the new User has been registered
+     */
     @POST
     @Path("/newUserSignUp/{username}/{password}")
     public Response newUserSignUp(@PathParam("username") String username, @PathParam("password") String password){
@@ -34,6 +38,11 @@ public class UserController {
     }
 
 
+    /**
+     * @param username of the user
+     * @param password corresponding password
+     * @return SpecialUser type object that can give an idea of the kind of user we are dealing with
+     */
     @POST
     @Path("/login/{username}/{password}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -47,7 +56,5 @@ public class UserController {
             return Response.status(200).entity(message).build();
         }
     }
-
-
 
 }

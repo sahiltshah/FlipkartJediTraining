@@ -1,6 +1,8 @@
 package com.flipkart.utils;
 
 
+import com.flipkart.global.GlobalVariables;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,14 +30,8 @@ public class DbUtils {
                 String password = prop.getProperty("password");
                 Class.forName(driver);
                 connection = DriverManager.getConnection(url, user, password);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (ClassNotFoundException | SQLException | IOException ex) {
+                ex.printStackTrace();
             }
             return connection;
         }

@@ -18,6 +18,9 @@ import java.util.ArrayList;
 public class ProfessorController {
     private static final Logger logger = Logger.getLogger(ProfessorController.class);
 
+    /**
+     * @return Get all Courses in the System
+     */
     @GET
     @Path("/showAllCourses")
     @Produces(MediaType.APPLICATION_JSON)
@@ -39,6 +42,11 @@ public class ProfessorController {
 
     }
 
+    /**
+     * @param facultyId who will teach the course henceforth
+     * @param courseId to be taught by the professor
+     * @return message indicating successful registration for a course
+     */
     @POST
     @Path("/addCourse/{facultyId}/{courseId}")
     public Response addFacultyCourse(@PathParam("facultyId") int facultyId,@PathParam("courseId") int courseId) {
@@ -55,6 +63,11 @@ public class ProfessorController {
 
     }
 
+    /**
+     * @param facultyId the faculty that is checking the grades
+     * @param courseId the course for which he/she intends to see all the grades
+     * @return an ArrayList of Grade type having all the results of that course
+     */
     @GET
     @Path("/viewGrades/{facultyId}/{courseId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -74,6 +87,11 @@ public class ProfessorController {
 
     }
 
+    /**
+     * @param facultyId who wants to stop teaching a course
+     * @param courseId that will no longer be taught by the professor
+     * @return message of successful completion
+     */
     @DELETE
     @Path("dropCourse/{facultyId}/{courseId}")
     public Response dropFacultyCourse(@PathParam("facultyId") int facultyId,@PathParam("courseId") int courseId) {
@@ -90,6 +108,12 @@ public class ProfessorController {
 
     }
 
+    /**
+     * @param gradesWrapper All the grades embedded to a Wrapper class object for the sake of input to REST API
+     * @param facultyId the faculty who is adding the grades
+     * @param courseId for which the grades are being added
+     * @return message intimating of successful addition
+     */
     @POST
     @Path("/addGrades/{facultyId}/{courseId}")
     @Consumes(MediaType.APPLICATION_JSON)

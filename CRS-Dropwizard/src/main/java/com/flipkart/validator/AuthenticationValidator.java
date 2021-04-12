@@ -57,16 +57,7 @@ public class  AuthenticationValidator {
 
         }
 
-        catch (UserDoesNotExistException ex) {
-            System.out.println("The username you enterred doesn't exist in our records. Try again!");
-            logger.debug(ex);
-            GlobalVariables.appendException(String.valueOf(ex));
-        } catch (WrongPasswordException ex) {
-            System.out.println("You entered the wrong password! Try again");
-            logger.debug(ex);
-            GlobalVariables.appendException(String.valueOf(ex));
-        } catch (UserIDMapDoesNotExist ex) {
-            ex.printStackTrace();
+        catch (UserDoesNotExistException | WrongPasswordException | UserIDMapDoesNotExist ex) {
             logger.debug(ex);
             GlobalVariables.appendException(String.valueOf(ex));
         }
