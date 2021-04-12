@@ -14,8 +14,6 @@ import org.apache.log4j.Logger;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-
-
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
@@ -34,7 +32,7 @@ public class StudentController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getCourses() {
 
-        logger.info("getCourses controller");
+        logger.info("show Courses controller");
         DB db = DB.getInstance();
         ArrayList<Course> courses = new CourseCatalogDBOperations().getAllCourses();
         logger.debug("Courses size: "+String.valueOf(courses.size()));

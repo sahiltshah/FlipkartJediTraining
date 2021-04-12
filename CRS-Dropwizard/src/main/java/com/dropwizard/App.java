@@ -11,6 +11,8 @@ import com.flipkart.controller.StudentController;
 import com.flipkart.controller.UserController;
 import com.flipkart.controller.example.CustomerRestController;
 import com.flipkart.controller.example.HelloWorldController;
+
+
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
@@ -32,6 +34,7 @@ public class App extends Application<Configuration> {
 
     @Override
     public void run(Configuration c, Environment e) throws Exception {
+        System.out.println("Run call");
         LOGGER.info("Registering REST resources");
         //  e.jersey().register(new EmployeeRESTController(e.getValidator()));
         System.out.println("Registering REST resources");
@@ -42,6 +45,8 @@ public class App extends Application<Configuration> {
         e.jersey().register(new UserController());
         e.jersey().register(new CustomerRestController());
         e.jersey().register(new HelloWorldController());
+
+
     }
 
     public static void main(String[] args) throws Exception {
