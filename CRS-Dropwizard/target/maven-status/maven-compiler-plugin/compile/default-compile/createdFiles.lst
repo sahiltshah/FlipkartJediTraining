@@ -1,5 +1,4 @@
 com/flipkart/bean/Professor.class
-com/flipkart/controller/example/CustomerRestController.class
 com/flipkart/service/serviceInterface$AccountingSystemFunctions.class
 com/flipkart/exception/CourseException/CourseAlreadyFullException.class
 com/flipkart/dao/DaoInterface$CourseCatalogSystemDbFunctions.class
@@ -72,13 +71,10 @@ com/flipkart/controller/UserController.class
 com/flipkart/exception/CourseException/CourseAlreadyHasStudents.class
 com/flipkart/utils/ScannerInput.class
 com/flipkart/exception/AuthenticationException/UserDoesNotExistException.class
-com/flipkart/controller/example/Order.class
 com/flipkart/client/unused/NonRegisteredDashboard.class
 com/flipkart/dao/DaoInterface$AccountingSystemDBFunctions.class
 com/flipkart/handler/HandlerInterface.class
 com/flipkart/bean/Student.class
-com/flipkart/controller/example/HelloWorldController.class
-com/flipkart/controller/example/Customer.class
 com/flipkart/service/CourseCatalogSystem.class
 com/flipkart/utils/wrappers/UnregisteredUsersWrapper.class
 com/dropwizard/App.class

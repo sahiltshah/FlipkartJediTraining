@@ -54,8 +54,8 @@ public class AccountingSystem implements serviceInterface.AccountingSystemFuncti
                     accountingSystemDBOperations.debitBalance(debitCard,debitCard.getBalance()-billAmount);
                     accountingSystemDBOperations.addTransaction(transaction);
                     System.out.println("Transaction process in DB complete");
-                    new NotificationSystem().addStudentNotification("Paid fees: "+transaction.getAmount()+"  # "+transaction.getTransactionID(),studentIndex);
-
+                    new NotificationSystem().addStudentNotification("Paid fees: "+transaction.getAmount()+"  Transaction ID: "+transaction.getTransactionID(),studentIndex);
+                    GlobalVariables.globalExceptionMessage = new StringBuilder().append("Paid fees: ").append(transaction.getAmount()).append("  Transaction ID: ").append(transaction.getTransactionID()).toString();
                 }
             }
         } catch (InsufficientBalanceException ex) {
@@ -65,7 +65,6 @@ public class AccountingSystem implements serviceInterface.AccountingSystemFuncti
         } catch (DebitCardInvalid ex) {
             logger.debug(ex);
             GlobalVariables.appendException(String.valueOf(ex));
-
         }
         return false;
     }
