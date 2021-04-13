@@ -3,7 +3,7 @@ package com.flipkart.validator;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Course;
 
-public class helperInterface {
+public class ValidatorInterface {
 
     public static interface CourseValidatorFunctions {
         //allotment

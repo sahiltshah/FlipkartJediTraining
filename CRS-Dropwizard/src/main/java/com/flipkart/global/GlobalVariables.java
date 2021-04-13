@@ -5,10 +5,10 @@ import com.flipkart.bean.*;
 public class GlobalVariables {
 
     //Global variables
-    public static int globalTransactionId = 1000;
-    public static int globalRollNumber = 1001;
-    public static int globalFacultyId = 9002;
-    public static int globalNotificationId = 1000;
+    public static int globalTransactionId = 1010;
+    public static int globalRollNumber = 1010;
+    public static int globalFacultyId = 9022;
+    public static int globalNotificationId = 1020;
 
     //Assumption no threading of API calls. Only one API call at a time
     public static String globalExceptionMessage = "";

@@ -15,8 +15,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/admin")
-public class AdminFunctionsController {
-    private static final Logger logger = Logger.getLogger(AdminFunctionsController.class);
+public class AdminController {
+    private static final Logger logger = Logger.getLogger(AdminController.class);
 
     @GET
     @Path("/getUnregisteredUsers")

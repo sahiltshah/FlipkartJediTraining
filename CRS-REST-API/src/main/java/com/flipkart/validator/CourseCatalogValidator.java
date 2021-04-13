@@ -15,7 +15,7 @@ import org.apache.log4j.Logger;
 import java.util.ArrayList;
 
 //all modules !complete
-public class CourseCatalogValidator implements helperInterface.CourseValidatorFunctions {
+public class CourseCatalogValidator implements ValidatorInterface.CourseValidatorFunctions {
     public static final Logger logger = Logger.getLogger(CourseCatalogDBOperations.class);
 
 

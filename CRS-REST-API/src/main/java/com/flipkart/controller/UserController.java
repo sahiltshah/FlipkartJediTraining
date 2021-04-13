@@ -2,23 +2,21 @@ package com.flipkart.controller;
 
 
 import com.flipkart.bean.SpecialUser;
-import com.flipkart.bean.User;
 import com.flipkart.dao.AuthenticationOperations;
 import com.flipkart.global.GlobalVariables;
 import com.flipkart.service.UserModificationSystem;
 import org.apache.log4j.Logger;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
 
 
 import javax.ws.rs.core.Response;
 
 @Path("/user")
-public class UserFunctionsController {
+public class UserController {
 
-    private static final Logger logger = Logger.getLogger(UserFunctionsController.class);
+    private static final Logger logger = Logger.getLogger(UserController.class);
 
 
 

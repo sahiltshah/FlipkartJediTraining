@@ -11,15 +11,43 @@
   <component name="ChangeListManager">
     <list default="true" id="d7b871de-011d-4536-9e65-a0449ca5bb93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/AdminFunctionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/AdminFunctionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/ProfessorFunctionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/ProfessorFunctionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/StudentFunctionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/StudentFunctionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/UserFunctionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/UserFunctionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/service/UserModificationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/service/UserModificationSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/StudentFunctionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/StudentFunctionsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/UserModificationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/service/UserModificationSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/controller/StudentFunctionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/controller/StudentFunctionsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/service/UserModificationSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/service/UserModificationSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/ProfessorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/wrappers/GradesWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/wrappers/GradesWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/wrappers/UnregisteredUsersWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/utils/wrappers/UnregisteredUsersWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/AuthenticationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/AuthenticationValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/CourseCatalogValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/CourseCatalogValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/ValidatorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flipkart/validator/ValidatorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/wrappers/GradesWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/bean/wrappers/UnregisteredUsersWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/AdminFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/ProfessorFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/StudentFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/controller/UserFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/AuthenticationValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/AuthenticationValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/CourseCatalogValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/CourseCatalogValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/helperInterface$CourseValidatorFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/helperInterface$StudentValidatorFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CRS-REST-API-1.0-SNAPSHOT/WEB-INF/classes/com/flipkart/validator/helperInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/bean/wrappers/GradesWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/bean/wrappers/UnregisteredUsersWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/controller/AdminFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/controller/ProfessorFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/controller/StudentFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/controller/UserFunctionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/validator/AuthenticationValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/validator/AuthenticationValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/validator/CourseCatalogValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/flipkart/validator/CourseCatalogValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/validator/helperInterface$CourseValidatorFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/validator/helperInterface$StudentValidatorFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/flipkart/validator/helperInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemoJavaProject/src/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../DemoJavaProject/src/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/bean/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/db/EmployeeDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/db/EmployeeDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/rest/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/rest/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/rest/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/rest/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/rest/HiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DemoJavaProject/src/main/java/com/dropwizard/rest/HiController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +93,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.11709601" />
@@ -86,19 +115,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -208,7 +224,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617953766893</updated>
       <workItem from="1617953768412" duration="14681000" />
-      <workItem from="1618138554011" duration="24756000" />
+      <workItem from="1618138554011" duration="28565000" />
+      <workItem from="1618221947340" duration="1558000" />
     </task>
     <servers />
   </component>

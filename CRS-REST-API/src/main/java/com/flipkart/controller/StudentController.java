@@ -20,9 +20,9 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
 @Path("/student")
-public class StudentFunctionsController {
+public class StudentController {
 
-    private static final Logger logger = Logger.getLogger(StudentFunctionsController.class);
+    private static final Logger logger = Logger.getLogger(StudentController.class);
 
 
 

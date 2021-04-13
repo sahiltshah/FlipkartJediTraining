@@ -65,8 +65,10 @@ public class  AuthenticationValidator {
             System.out.println("You entered the wrong password! Try again");
             logger.debug(ex);
             GlobalVariables.appendException(String.valueOf(ex));
-        } catch (UserIDMapDoesNotExist userIDMapDoesNotExist) {
-            userIDMapDoesNotExist.printStackTrace();
+        } catch (UserIDMapDoesNotExist ex) {
+            ex.printStackTrace();
+            logger.debug(ex);
+            GlobalVariables.appendException(String.valueOf(ex));
         }
         return specialUser;
     }

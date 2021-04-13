@@ -1,4 +1,4 @@
-package com.flipkart.bean.wrappers;
+package com.flipkart.utils.wrappers;
 
 import com.flipkart.bean.Grade;
 

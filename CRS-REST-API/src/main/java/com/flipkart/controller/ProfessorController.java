@@ -17,8 +17,8 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
 @Path("/professor")
-public class ProfessorFunctionsController {
-    private static final Logger logger = Logger.getLogger(ProfessorFunctionsController.class);
+public class ProfessorController {
+    private static final Logger logger = Logger.getLogger(ProfessorController.class);
 
     @GET
     @Path("/showAllCourses")

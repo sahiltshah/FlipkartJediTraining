@@ -1,8 +1,6 @@
 package com.flipkart.handler;
 
 import com.flipkart.bean.SpecialUser;
-import com.flipkart.bean.User;
-import com.flipkart.client.Runner;
 import com.flipkart.service.UserModificationSystem;
 import com.flipkart.utils.ScreenWork;
 import org.apache.log4j.Logger;
