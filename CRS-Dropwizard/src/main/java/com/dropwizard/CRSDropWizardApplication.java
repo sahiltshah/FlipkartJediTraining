@@ -7,7 +7,7 @@ import com.flipkart.controller.StudentController;
 import com.flipkart.controller.UserController;
 
 
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
@@ -27,7 +27,7 @@ public class CRSDropWizardApplication extends Application<Configuration> {
     @Override
     public void initialize(Bootstrap<Configuration> b) {
         LOGGER.info("initialization call");
-        DB db = DB.getInstance(); //singleton class
+        DBConnection dbConnection = DBConnection.getInstance(); //singleton class
     }
 
     /**

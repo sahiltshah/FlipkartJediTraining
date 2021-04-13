@@ -3,7 +3,7 @@ package com.flipkart.dashboard.unused;
 import com.flipkart.bean.CourseMap;
 import com.flipkart.dao.CourseCatalogDBOperations;
 import com.flipkart.global.GlobalVariables;
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import com.flipkart.handler.UserHandler;
 import com.flipkart.utils.Initializer;
 import com.flipkart.utils.ScreenWork;
@@ -51,7 +51,7 @@ public class Runner {
             GlobalVariables.appendException(String.valueOf(ex));
         }
         finally {
-            DB x = DB.getInstance();
+            DBConnection x = DBConnection.getInstance();
             x.closeConnection();
         }
 

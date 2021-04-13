@@ -2,6 +2,7 @@
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/controller/UserController.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/bean/Course.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/dao/AuthenticationOperations.java
+/Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/utils/DBConnection.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/handler/HandlerInterface.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/dashboard/unused/AdminDashboard.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/dashboard/unused/NonRegisteredDashboard.java
@@ -15,7 +16,6 @@
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/controller/AdminController.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/dao/CourseCatalogDBOperations.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/exception/CourseException/CourseNotFoundException.java
-/Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/dashboard/Runner.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/bean/Grade.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/bean/User.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/bean/Transaction.java
@@ -51,7 +51,6 @@
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/dashboard/unused/Dashboard.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/global/GlobalVariables.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/utils/wrappers/UnregisteredUsersWrapper.java
-/Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/utils/DB.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/exception/AuthenticationException/WrongPasswordException.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/handler/AdminHandler.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/validator/ValidatorInterface.java
@@ -71,3 +70,4 @@
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/exception/AuthenticationException/UsernIDAlreadyInUse.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/exception/CourseException/CourseAlreadyFullException.java
 /Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/exception/AuthenticationException/UserIDMapDoesNotExist.java
+/Users/sahil.shah/Documents/FlipkartJEDITraining/CRS-Dropwizard/src/main/java/com/flipkart/dashboard/unused/Runner.java

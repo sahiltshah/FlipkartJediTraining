@@ -2,7 +2,7 @@ package com.flipkart.dao;
 
 import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.Notification;
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
@@ -16,7 +16,7 @@ public class NotificationSystemDBOperations {
     public void addNotification(Notification notification){
         logger.info("add Notification method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -50,7 +50,7 @@ public class NotificationSystemDBOperations {
 
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();

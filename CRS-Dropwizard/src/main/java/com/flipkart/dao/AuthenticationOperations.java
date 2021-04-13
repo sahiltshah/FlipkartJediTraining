@@ -5,7 +5,7 @@ import com.flipkart.bean.SpecialUser;
 import com.flipkart.bean.Student;
 import com.flipkart.global.GlobalVariables;
 import com.flipkart.service.NotificationSystem;
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
@@ -24,10 +24,10 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
         PreparedStatement stmt = null;
         ArrayList<String> ans = new ArrayList<>();
         ResultSet rs = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         try {
 
-            if (db.conn == null)
+            if (dbConnection.conn == null)
             {
                 logger.error("Connection is Null so exiting!");
                 throw new ConnectionNotMadeYetException();
@@ -35,7 +35,7 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
 
             String sql_query = SQLQueriesConstants.LOGIN_ACCESS;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1, username);
             rs = stmt.executeQuery();
 
@@ -82,13 +82,13 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
         PreparedStatement stmt = null;
         ArrayList<SpecialUser> ans = new ArrayList<>();
         ResultSet rs = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.LOGIN_MAP_ACCESS;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1, username);
             rs = stmt.executeQuery();
 
@@ -131,13 +131,13 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
         String ans = "";
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_USERNAME_FROM_STUDENTID;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setInt(1, studentId);
             rs = stmt.executeQuery();
 
@@ -172,14 +172,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void changePassword(String userName, String newPassword) {
         logger.info("change password function");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.CHANGE_PASSWORD;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1,newPassword);
             stmt.setString(2,userName);
             stmt.executeUpdate();
@@ -206,14 +206,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
         logger.info("getSpecific username method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_USERNAME_FROM_LOGINDETAILS;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1, username);
             rs = stmt.executeQuery();
 
@@ -253,14 +253,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void registerNewUserInDB(String username,String password){
         logger.info("register NewUser method");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_LOGINDETAILS;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
             stmt.setString(2,password);
             stmt.executeUpdate();
@@ -284,14 +284,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void addNewUserToLoginMap(String username){
         logger.info("addNewUserToLoginMap method");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_LOGINMAP;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
             stmt.setInt(2,-1);
             stmt.setInt(3,3);
@@ -314,14 +314,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void removeUsernameFromLoginMap(String username){
         logger.info("Removing user from loginMap");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.REMOVE_LOGINMAP;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
 
             stmt.executeUpdate();
@@ -343,14 +343,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void removeUsernameFromLoginDetails(String username){
         logger.info("Removing user from loginDetails");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.REMOVE_LOGINDETAILS;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
 
             stmt.executeUpdate();
@@ -373,14 +373,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
         int studentId = globalRollNumber++;
         logger.info("Modifying the user type");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.MODIFY_USER_TYPE;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setInt(1,1);
             stmt.setInt(2,studentId);
             stmt.setString(3,username);
@@ -405,16 +405,16 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
 
     public ArrayList<String> getUnregisteredUsers() {
         ArrayList<String> ans = new ArrayList<>();
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         logger.info("getSpecific username that are unregistered method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_UNREGISTERED_USERS;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             rs = stmt.executeQuery();
 
 
@@ -455,14 +455,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void addNewProfessorToLoginMap(String username, int facultyId){
         logger.info("add Professor to loginMap");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_LOGINMAP;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1,username);
             stmt.setInt(2,facultyId);
             stmt.setInt(3,2);
@@ -485,14 +485,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void addNewStudent(Student student){
         logger.info("add Student to students");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_STUDENT;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setInt(1,student.getRollNumber());
             stmt.setInt(2,student.getCurrentSubjectCount());
 
@@ -516,14 +516,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void addNewProfessor(int facultyId){
         logger.info("add faculty to table");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_PROFESSOR;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setInt(1,facultyId);
             stmt.executeUpdate();
 
@@ -545,14 +545,14 @@ public class AuthenticationOperations implements DaoInterface.AuthenticationSyst
     public void removeStudent(int studentId) {
         logger.info("remove student from Students");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.REMOVE_STUDENT;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setInt(1,studentId);
 
             stmt.executeUpdate();

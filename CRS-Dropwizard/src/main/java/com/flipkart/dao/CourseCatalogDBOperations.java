@@ -5,7 +5,7 @@ import com.flipkart.bean.Course;
 import com.flipkart.bean.CourseMap;
 import com.flipkart.bean.Grade;
 import com.flipkart.global.GlobalVariables;
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
@@ -22,7 +22,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         ArrayList<Course> ans = new ArrayList<>();
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -73,7 +73,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void showAllCourses() {
         logger.info("Show All Courses method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -118,7 +118,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         Course ans = new Course("",-1,0,0,-1);
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -173,7 +173,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void modifyCourseCount(Course course){
         logger.info("modifyCourseCount method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -202,7 +202,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void addFaculty(int professorId,int courseId){
         logger.info("addFaculty function");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -233,7 +233,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         logger.info("getFacultyCourses method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -276,7 +276,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void dropFacultyCourse(int courseId){
         logger.info("drop Faculty course method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -306,7 +306,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void addCourseMap(CourseMap courseMap) {
         logger.info("addCourseMap method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -338,7 +338,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void dropCourseMap(CourseMap courseMap) {
         logger.info("dropCourseMap method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -369,7 +369,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         logger.info("GetStudentCourses method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -415,7 +415,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         logger.info("getStudentsFromCourse method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -462,7 +462,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -513,7 +513,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         logger.info("GetStudentGrades method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -558,7 +558,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
         logger.info("addStudentGrades method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -588,7 +588,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
 
     public ArrayList<Grade> getSubjectGrades(int courseId){
         ArrayList<Grade> ans=new ArrayList<>();
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         logger.info("getSubjectGrades method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
@@ -637,7 +637,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void addCourse(Course course) {
         logger.info("addCourse method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -669,7 +669,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void deleteCourseFromDB(int courseId) {
         logger.info(" deleteCourseFromDB method");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();
@@ -696,7 +696,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
     public void modifyStudentSubjectCount(int studentId, int newStudentSubjectCount){
         logger.info("Modifying the student subject count: ");
         PreparedStatement stmt = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
 
         try {
             if (x.conn == null)
@@ -729,7 +729,7 @@ public class CourseCatalogDBOperations implements DaoInterface.CourseCatalogSyst
         int ans = 0;
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         try {
             if (x.conn == null)
                 throw new ConnectionNotMadeYetException();

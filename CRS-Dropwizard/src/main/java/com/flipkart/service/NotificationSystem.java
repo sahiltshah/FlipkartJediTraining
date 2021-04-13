@@ -4,7 +4,6 @@ import com.flipkart.bean.Notification;
 import com.flipkart.dao.AuthenticationOperations;
 import com.flipkart.dao.NotificationSystemDBOperations;
 import com.flipkart.global.GlobalVariables;
-import com.flipkart.utils.DB;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;

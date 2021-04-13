@@ -13,7 +13,7 @@ public class Initializer {
         specialUser.type=1;
         specialUser.id =0;
 
-        DB x= DB.getInstance();
+        DBConnection x= DBConnection.getInstance();
         logger.info("initialization with DB connection complete");
     }
 

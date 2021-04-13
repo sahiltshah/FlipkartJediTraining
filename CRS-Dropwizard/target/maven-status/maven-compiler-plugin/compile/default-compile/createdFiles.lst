@@ -1,6 +1,7 @@
 com/flipkart/bean/Professor.class
 com/flipkart/dashboard/unused/ProfessorDashboard.class
 com/flipkart/service/serviceInterface$AccountingSystemFunctions.class
+com/flipkart/utils/DBConnection.class
 com/flipkart/exception/CourseException/CourseAlreadyFullException.class
 com/flipkart/dao/DaoInterface$CourseCatalogSystemDbFunctions.class
 com/flipkart/handler/AdminHandler.class
@@ -19,6 +20,7 @@ com/flipkart/service/serviceInterface.class
 com/flipkart/exception/ProfessorException/CantAbandonSubjectException.class
 com/flipkart/bean/Admin.class
 com/flipkart/utils/DebitCardInput.class
+com/flipkart/dashboard/unused/Runner.class
 com/flipkart/bean/CourseMap.class
 com/flipkart/handler/HandlerInterface$ProfessorFunctions.class
 com/flipkart/service/AccountingSystem.class
@@ -73,7 +75,6 @@ com/flipkart/utils/ScannerInput.class
 com/flipkart/exception/AuthenticationException/UserDoesNotExistException.class
 com/flipkart/dao/DaoInterface$AccountingSystemDBFunctions.class
 com/flipkart/handler/HandlerInterface.class
-com/flipkart/dashboard/Runner.class
 com/flipkart/bean/Student.class
 com/flipkart/service/CourseCatalogSystem.class
 com/flipkart/dashboard/unused/AdminDashboard.class
@@ -83,5 +84,4 @@ com/flipkart/utils/Initializer.class
 com/flipkart/validator/ValidatorInterface.class
 com/flipkart/service/UserModificationSystem.class
 com/flipkart/handler/ProfessorHandler.class
-com/flipkart/utils/DB.class
 com/flipkart/exception/CourseException/CourseAlreadyHasFaculty.class

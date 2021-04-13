@@ -4,7 +4,7 @@ import com.flipkart.exception.DbException.ConnectionNotMadeYetException;
 import com.flipkart.bean.DebitCard;
 import com.flipkart.bean.Transaction;
 import com.flipkart.global.GlobalVariables;
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
@@ -19,13 +19,13 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
         logger.info("fetch Debit card method");
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.GET_DEBIT_CARD;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(1, debitCard.getCardNumber());
             rs = stmt.executeQuery();
 
@@ -66,14 +66,14 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
     public void debitBalance(DebitCard debitCard,float newBalance){
         logger.info("debitBalance method");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.DEBIT_BALANCE;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setString(2, debitCard.getCardNumber());
             stmt.setFloat(1,newBalance);
             stmt.executeUpdate();
@@ -98,14 +98,14 @@ public class AccountingSystemDBOperations implements DaoInterface.AccountingSyst
     public void addTransaction(Transaction transaction){
         logger.info("add Transaction method");
         PreparedStatement stmt = null;
-        DB db= DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
 
         try {
-            if (db.conn == null)
+            if (dbConnection.conn == null)
                 throw new ConnectionNotMadeYetException();
 
             String sql_query = SQLQueriesConstants.ADD_TRANSACTION;
-            stmt = db.conn.prepareStatement(sql_query);
+            stmt = dbConnection.conn.prepareStatement(sql_query);
             stmt.setInt(1, transaction.getTransactionID());
             stmt.setFloat(2, transaction.getAmount());
             stmt.setInt(3,transaction.getStudentId());

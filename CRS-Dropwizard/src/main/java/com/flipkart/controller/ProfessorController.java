@@ -6,7 +6,7 @@ import com.flipkart.utils.wrappers.GradesWrapper;
 import com.flipkart.dao.CourseCatalogDBOperations;
 import com.flipkart.global.GlobalVariables;
 import com.flipkart.service.CourseCatalogSystem;
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import org.apache.log4j.Logger;
 
 import javax.ws.rs.*;
@@ -27,7 +27,7 @@ public class ProfessorController {
     public Response getCourses() {
 
         logger.info("getCourses controller");
-        DB db = DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         ArrayList<Course> courses = new CourseCatalogDBOperations().getAllCourses();
         logger.debug("Courses size: "+String.valueOf(courses.size()));
 
@@ -136,7 +136,7 @@ public class ProfessorController {
 
 
 
-
+//Admin
 
 
 }

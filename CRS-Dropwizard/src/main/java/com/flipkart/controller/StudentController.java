@@ -8,7 +8,7 @@ import com.flipkart.service.AccountingSystem;
 import com.flipkart.service.CourseCatalogSystem;
 import com.flipkart.service.NotificationSystem;
 import com.flipkart.service.UserModificationSystem;
-import com.flipkart.utils.DB;
+import com.flipkart.utils.DBConnection;
 import org.apache.log4j.Logger;
 
 
@@ -33,7 +33,7 @@ public class StudentController {
     public Response getCourses() {
 
         logger.info("show Courses controller");
-        DB db = DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         ArrayList<Course> courses = new CourseCatalogDBOperations().getAllCourses();
         logger.debug("Courses size: "+String.valueOf(courses.size()));
 
@@ -56,7 +56,7 @@ public class StudentController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllCourseMaps(){
         logger.info("get all courseMaps controller");
-        DB db = DB.getInstance();
+        DBConnection dbConnection = DBConnection.getInstance();
         ArrayList<CourseMap> courseMaps = new CourseCatalogDBOperations().getAllCourseMaps();
         //courseMaps.add(new CourseMap(-1,-1));
         return Response.status(200).entity(courseMaps).build();
