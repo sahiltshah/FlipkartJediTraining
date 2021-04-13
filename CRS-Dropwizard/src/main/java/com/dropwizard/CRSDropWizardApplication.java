@@ -1,15 +1,13 @@
 package com.dropwizard;
 
-/**
- * Hello world!
- *
- */
+
 import com.flipkart.controller.AdminController;
 import com.flipkart.controller.ProfessorController;
 import com.flipkart.controller.StudentController;
 import com.flipkart.controller.UserController;
 
 
+import com.flipkart.utils.DB;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
@@ -18,10 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-/**
- * Hello world!
- *
- */
+
 public class CRSDropWizardApplication extends Application<Configuration> {
     private static final Logger LOGGER = LoggerFactory.getLogger(CRSDropWizardApplication.class);
 
@@ -32,6 +27,7 @@ public class CRSDropWizardApplication extends Application<Configuration> {
     @Override
     public void initialize(Bootstrap<Configuration> b) {
         LOGGER.info("initialization call");
+        DB db = DB.getInstance(); //singleton class
     }
 
     /**
