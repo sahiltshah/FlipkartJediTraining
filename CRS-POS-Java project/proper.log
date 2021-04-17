@@ -1,0 +1,531 @@
+
+2021-04-13 12:44:12.863 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:44:12.874 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:44:12.888 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:44:13.288 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:44:13.300 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:46:05.414 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-13 12:46:05.422 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-13 12:46:05.423 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-13 12:46:08.217 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 12:46:10.580 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 12:46:10.581 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:46:10.585 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:46:10.782 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:46:10.789 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 12:46:10.789 [main] DEBUG com.flipkart.validator.AuthenticationValidator - null
+2021-04-13 12:46:10.789 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 12:46:14.380 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 12:46:24.536 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 12:46:24.537 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 12:46:24.537 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 12:46:24.538 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 12:46:24.538 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 12:46:24.538 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 12:46:24.539 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 12:46:28.434 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:46:28.440 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:46:35.600 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:46:35.601 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:47:09.825 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:47:09.826 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:47:37.232 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-13 12:47:37.235 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-13 12:47:37.236 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-13 12:47:39.083 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 12:47:41.980 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 12:47:41.983 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:47:41.988 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:47:42.194 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:47:42.200 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 12:47:42.201 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 12:47:42.201 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 12:47:42.201 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 12:47:42.201 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 12:47:42.202 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 12:47:44.529 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:47:44.531 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:48:53.241 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:48:53.243 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:48:53.246 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:48:53.430 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:48:53.438 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:49:20.334 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:49:20.336 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:49:20.340 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:49:20.518 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:49:20.526 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:55:04.810 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addFaculty function
+2021-04-13 12:55:04.815 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:55:04.819 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:55:05.001 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:55:05.008 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - The course has been alloted to the faculty!
+2021-04-13 12:55:05.008 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:55:05.009 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:55:10.515 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - drop Faculty course method
+2021-04-13 12:55:10.534 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:55:10.539 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:55:10.736 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:55:10.748 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 12:55:10.749 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 12:58:22.144 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addStudentGrades method
+2021-04-13 12:58:22.149 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 12:58:22.154 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 12:58:22.414 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 12:58:22.425 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - getSubjectGrades method
+2021-04-13 12:58:22.428 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 13:01:05.985 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addStudentGrades method
+2021-04-13 13:01:05.988 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 13:01:05.993 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 13:01:06.239 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 13:01:06.250 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - getSubjectGrades method
+2021-04-13 13:01:06.250 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 13:05:01.721 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 13:05:01.728 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 13:05:01.733 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 13:05:01.983 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 13:05:01.996 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 13:06:13.058 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addFaculty function
+2021-04-13 13:06:13.060 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 13:06:13.065 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 13:06:13.286 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 13:06:13.296 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - The course has been alloted to the faculty!
+2021-04-13 13:06:13.296 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 13:06:13.297 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 13:07:07.470 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - drop Faculty course method
+2021-04-13 13:07:07.479 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 13:07:07.484 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 13:07:07.757 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 13:07:07.766 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 13:07:07.780 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 13:07:57.193 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addStudentGrades method
+2021-04-13 13:07:57.196 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 13:07:57.201 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 13:07:57.418 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 13:07:57.433 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - getSubjectGrades method
+2021-04-13 13:07:57.435 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 16:49:56.165 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addStudentGrades method
+2021-04-13 16:49:56.174 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 16:49:56.179 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 16:49:56.454 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 16:49:56.466 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - getSubjectGrades method
+2021-04-13 16:49:56.467 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 16:50:09.252 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-13 16:50:09.262 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-13 16:50:09.264 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-13 16:50:22.468 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-13 16:50:29.471 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-13 16:50:29.471 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 16:50:29.476 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 16:50:29.672 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 16:50:29.679 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:50:31.733 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-13 16:50:31.735 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-13 16:50:31.736 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-13 16:50:33.263 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 16:50:37.718 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 16:50:37.719 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:50:37.719 [main] DEBUG com.flipkart.validator.AuthenticationValidator - null
+2021-04-13 16:50:37.719 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 16:50:45.450 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 16:50:50.257 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 16:50:50.259 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:50:50.259 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 16:50:50.260 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:50:50.260 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 16:50:50.260 [main] INFO  com.flipkart.handler.UserHandler - case 3
+2021-04-13 16:51:00.786 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 16:51:03.966 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 16:51:03.966 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:51:03.967 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 16:51:03.967 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:51:03.967 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 16:51:03.967 [main] INFO  com.flipkart.handler.UserHandler - case 0
+2021-04-13 16:51:03.968 [main] INFO  com.flipkart.handler.AdminHandler - At AdminMenu
+2021-04-13 16:51:22.601 [main] INFO  com.flipkart.service.NewUserRegistrationSystem - Perusing Students that may be unregistered
+2021-04-13 16:51:22.601 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username that are unregistered method
+2021-04-13 16:51:22.602 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:51:29.665 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginMap
+2021-04-13 16:51:29.668 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginDetails
+2021-04-13 16:51:31.635 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginMap
+2021-04-13 16:51:31.637 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginDetails
+2021-04-13 16:51:32.963 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginMap
+2021-04-13 16:51:32.965 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginDetails
+2021-04-13 16:51:36.360 [main] INFO  com.flipkart.dao.AuthenticationOperations - Modifying the user type
+2021-04-13 16:51:36.362 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 16:51:36.363 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:51:36.381 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 16:52:07.470 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 16:52:11.676 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 16:52:11.677 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:52:11.677 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 16:52:11.678 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 16:52:11.678 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 16:52:11.678 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 16:52:11.678 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 16:52:21.164 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 16:52:21.166 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:30:43.295 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-13 23:30:43.306 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 23:30:43.310 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 23:30:43.477 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 23:30:43.477 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-13 23:30:43.477 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-13 23:30:43.492 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-13 23:30:46.746 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:30:53.253 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:30:53.262 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:30:53.263 [main] DEBUG com.flipkart.validator.AuthenticationValidator - null
+2021-04-13 23:30:53.263 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:31:04.896 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-13 23:31:08.864 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-13 23:31:08.865 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:31:10.773 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-13 23:31:10.775 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-13 23:31:10.776 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-13 23:31:15.900 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-13 23:31:17.576 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-13 23:31:17.579 [main] ERROR com.flipkart.dao.AuthenticationOperations - Column 'userame' not found.
+2021-04-13 23:31:17.579 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:31:21.824 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-13 23:31:21.826 [main] ERROR com.flipkart.dao.AuthenticationOperations - Duplicate entry 'sahil' for key 'PRIMARY'
+2021-04-13 23:31:21.826 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-13 23:31:21.827 [main] ERROR com.flipkart.dao.AuthenticationOperations - Duplicate entry 'sahil' for key 'PRIMARY'
+2021-04-13 23:31:21.827 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-13 23:31:47.686 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-13 23:31:50.660 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-13 23:31:50.661 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:31:52.735 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-13 23:31:52.737 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-13 23:31:52.738 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-13 23:32:14.077 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:32:17.393 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:32:17.394 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:32:17.394 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:32:17.395 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:32:17.395 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:32:17.395 [main] INFO  com.flipkart.handler.UserHandler - case 3
+2021-04-13 23:32:26.755 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:32:30.874 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:32:30.875 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:32:30.875 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:32:30.876 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:32:30.876 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:32:30.876 [main] INFO  com.flipkart.handler.UserHandler - case 0
+2021-04-13 23:32:30.879 [main] INFO  com.flipkart.handler.AdminHandler - At AdminMenu
+2021-04-13 23:32:33.569 [main] INFO  com.flipkart.service.NewUserRegistrationSystem - Perusing Students that may be unregistered
+2021-04-13 23:32:33.570 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username that are unregistered method
+2021-04-13 23:32:33.571 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:32:52.751 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginMap
+2021-04-13 23:32:52.753 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginDetails
+2021-04-13 23:33:04.806 [main] INFO  com.flipkart.dao.AuthenticationOperations - Modifying the user type
+2021-04-13 23:33:04.813 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:33:04.814 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:33:04.824 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:33:22.968 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:33:26.755 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:33:26.755 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:33:26.756 [main] DEBUG com.flipkart.validator.AuthenticationValidator - null
+2021-04-13 23:33:26.756 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:33:29.583 [main] INFO  com.flipkart.utils.DB - Connection has been closed
+2021-04-13 23:33:35.471 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-13 23:33:35.475 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 23:33:35.478 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 23:33:35.641 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 23:33:35.642 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-13 23:33:35.642 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-13 23:33:35.643 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-13 23:33:38.411 [main] INFO  com.flipkart.utils.DB - Connection has been closed
+2021-04-13 23:33:42.850 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-13 23:33:42.855 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-13 23:33:42.859 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-13 23:33:43.037 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-13 23:33:43.037 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-13 23:33:43.038 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-13 23:33:43.039 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-13 23:33:47.757 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:33:50.903 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:33:50.912 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:33:50.912 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:33:50.913 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:33:50.913 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:33:50.913 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 23:33:50.917 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 23:34:09.344 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 23:34:09.347 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:15.004 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 23:34:15.006 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:15.008 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addCourseMap method
+2021-04-13 23:34:15.009 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get student subject count method
+2021-04-13 23:34:15.010 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:15.010 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Modifying the student subject count: 
+2021-04-13 23:34:15.011 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - modifyCourseCount method
+2021-04-13 23:34:15.012 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - The course count has been modified!
+2021-04-13 23:34:26.339 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 23:34:26.340 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:34.908 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get all courses method
+2021-04-13 23:34:34.909 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:34.910 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - addCourseMap method
+2021-04-13 23:34:34.911 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Get student subject count method
+2021-04-13 23:34:34.912 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:34.912 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Modifying the student subject count: 
+2021-04-13 23:34:34.913 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - modifyCourseCount method
+2021-04-13 23:34:34.914 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - The course count has been modified!
+2021-04-13 23:34:44.456 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetStudentCourses method
+2021-04-13 23:34:44.458 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:44.458 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 101
+2021-04-13 23:34:44.459 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@1445d7f
+2021-04-13 23:34:44.460 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:44.460 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:34:44.460 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 102
+2021-04-13 23:34:44.460 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@6c3f5566
+2021-04-13 23:34:44.461 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:34:44.461 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:34:56.767 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - fetch Debit card method
+2021-04-13 23:34:56.768 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - Closed rs
+2021-04-13 23:34:56.778 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - debitBalance method
+2021-04-13 23:34:56.779 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - The amount has been debited
+2021-04-13 23:34:56.779 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - add Transaction method
+2021-04-13 23:34:56.781 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:34:56.782 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:34:56.783 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:38:00.408 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-13 23:38:03.166 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-13 23:38:03.167 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:04.908 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-13 23:38:04.910 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-13 23:38:04.911 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-13 23:38:17.798 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:38:20.590 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:38:20.591 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:20.591 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:38:20.592 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:20.592 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:38:20.592 [main] INFO  com.flipkart.handler.UserHandler - case 0
+2021-04-13 23:38:20.593 [main] INFO  com.flipkart.handler.AdminHandler - At AdminMenu
+2021-04-13 23:38:22.789 [main] INFO  com.flipkart.service.NewUserRegistrationSystem - Perusing Students that may be unregistered
+2021-04-13 23:38:22.790 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username that are unregistered method
+2021-04-13 23:38:22.790 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:26.212 [main] INFO  com.flipkart.dao.AuthenticationOperations - Modifying the user type
+2021-04-13 23:38:26.213 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:38:26.214 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:26.214 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:38:30.685 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:38:34.912 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:38:34.913 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:34.914 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:38:34.914 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:34.914 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:38:34.914 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 23:38:34.915 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 23:38:38.437 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetStudentCourses method
+2021-04-13 23:38:38.438 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:38:38.438 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 101
+2021-04-13 23:38:38.438 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@b7f23d9
+2021-04-13 23:38:38.438 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:38:38.439 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:38:38.439 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 102
+2021-04-13 23:38:38.439 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@69b794e2
+2021-04-13 23:38:38.439 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:38:38.439 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:38:48.039 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - fetch Debit card method
+2021-04-13 23:38:48.040 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - Closed rs
+2021-04-13 23:38:48.041 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - debitBalance method
+2021-04-13 23:38:48.042 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - The amount has been debited
+2021-04-13 23:38:48.042 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - add Transaction method
+2021-04-13 23:38:48.043 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:38:48.044 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:38:48.044 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:39:18.826 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetStudentCourses method
+2021-04-13 23:39:18.827 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:39:18.827 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 101
+2021-04-13 23:39:18.828 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@6b53e23f
+2021-04-13 23:39:18.828 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:39:18.828 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:39:18.828 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 102
+2021-04-13 23:39:18.829 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@1b68b9a4
+2021-04-13 23:39:18.829 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:39:18.829 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:39:29.778 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - fetch Debit card method
+2021-04-13 23:39:29.779 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - Closed rs
+2021-04-13 23:39:36.790 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetStudentCourses method
+2021-04-13 23:39:36.790 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:39:36.791 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 101
+2021-04-13 23:39:36.791 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@2b4a2ec7
+2021-04-13 23:39:36.791 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:39:36.792 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:39:36.792 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 102
+2021-04-13 23:39:36.792 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@51b7e5df
+2021-04-13 23:39:36.792 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:39:36.792 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:39:41.333 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - fetch Debit card method
+2021-04-13 23:39:41.334 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - Closed rs
+2021-04-13 23:39:41.334 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - debitBalance method
+2021-04-13 23:39:41.336 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - The amount has been debited
+2021-04-13 23:39:41.336 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - add Transaction method
+2021-04-13 23:39:41.337 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:39:41.337 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:39:41.337 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:41:01.459 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetStudentCourses method
+2021-04-13 23:41:01.460 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:41:01.460 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 101
+2021-04-13 23:41:01.461 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@2357d90a
+2021-04-13 23:41:01.461 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:41:01.461 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:41:01.461 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 102
+2021-04-13 23:41:01.462 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@145eaa29
+2021-04-13 23:41:01.462 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:41:01.462 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:41:08.872 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - fetch Debit card method
+2021-04-13 23:41:08.873 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - Closed rs
+2021-04-13 23:41:08.873 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - debitBalance method
+2021-04-13 23:41:08.874 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - The amount has been debited
+2021-04-13 23:41:08.874 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - add Transaction method
+2021-04-13 23:41:08.875 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:41:08.875 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:41:08.876 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:41:19.111 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:41:22.051 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:41:22.051 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:41:22.052 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:41:22.052 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:41:22.053 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:41:22.053 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 23:41:22.053 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 23:41:51.948 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetStudentCourses method
+2021-04-13 23:41:51.948 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:41:51.949 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 101
+2021-04-13 23:41:51.949 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@3bbc39f8
+2021-04-13 23:41:51.949 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:41:51.949 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:41:51.950 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetCourseFromCourseId: 102
+2021-04-13 23:41:51.950 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - com.mysql.jdbc.JDBC4ResultSet@29f69090
+2021-04-13 23:41:51.950 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:41:51.950 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Returning the course from courseId
+2021-04-13 23:41:57.733 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - fetch Debit card method
+2021-04-13 23:41:57.734 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - Closed rs
+2021-04-13 23:41:57.734 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - debitBalance method
+2021-04-13 23:41:57.735 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - The amount has been debited
+2021-04-13 23:41:57.735 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - add Transaction method
+2021-04-13 23:41:57.736 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:41:57.737 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:41:57.737 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:43:14.688 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:43:19.841 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:43:19.842 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:43:19.842 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:43:19.843 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:43:19.843 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:43:19.843 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 23:43:19.843 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 23:45:32.774 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-13 23:45:34.492 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-13 23:45:34.493 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:45:36.247 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-13 23:45:36.249 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-13 23:45:36.250 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-13 23:45:38.883 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:45:41.237 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:45:41.238 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:45:41.238 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:45:41.238 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:45:41.238 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:45:41.238 [main] INFO  com.flipkart.handler.UserHandler - case 0
+2021-04-13 23:45:41.239 [main] INFO  com.flipkart.handler.AdminHandler - At AdminMenu
+2021-04-13 23:45:43.017 [main] INFO  com.flipkart.service.NewUserRegistrationSystem - Perusing Students that may be unregistered
+2021-04-13 23:45:43.017 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username that are unregistered method
+2021-04-13 23:45:43.018 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:45:44.774 [main] INFO  com.flipkart.dao.AuthenticationOperations - Modifying the user type
+2021-04-13 23:45:44.775 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:45:44.776 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:45:44.776 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:46:04.899 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:46:07.683 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:46:07.684 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:46:07.684 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:46:07.684 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:46:07.684 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:46:07.685 [main] INFO  com.flipkart.handler.UserHandler - case 1
+2021-04-13 23:46:07.685 [main] INFO  com.flipkart.handler.StudentHandler - studentMenu
+2021-04-13 23:46:10.312 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - GetStudentCourses method
+2021-04-13 23:46:10.312 [main] INFO  com.flipkart.dao.CourseCatalogDBOperations - Closed rs
+2021-04-13 23:46:18.072 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - fetch Debit card method
+2021-04-13 23:46:18.073 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - Closed rs
+2021-04-13 23:46:18.073 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - debitBalance method
+2021-04-13 23:46:18.074 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - The amount has been debited
+2021-04-13 23:46:18.074 [main] INFO  com.flipkart.dao.AccountingSystemDBOperations - add Transaction method
+2021-04-13 23:46:18.075 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:46:18.076 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:46:18.076 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-13 23:46:52.832 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-13 23:46:55.931 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-13 23:46:55.932 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:46:55.932 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-13 23:46:55.933 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:46:55.933 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-13 23:46:55.933 [main] INFO  com.flipkart.handler.UserHandler - case 0
+2021-04-13 23:46:55.933 [main] INFO  com.flipkart.handler.AdminHandler - At AdminMenu
+2021-04-13 23:47:06.589 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-13 23:47:06.590 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:47:06.590 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-13 23:47:06.592 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-13 23:47:06.592 [main] INFO  com.flipkart.dao.AuthenticationOperations - add Professor to loginMap
+2021-04-13 23:47:06.593 [main] ERROR com.flipkart.dao.AuthenticationOperations - Duplicate entry 'amit' for key 'PRIMARY'
+2021-04-13 23:47:40.188 [main] INFO  com.flipkart.service.NewUserRegistrationSystem - Perusing Students that may be unregistered
+2021-04-13 23:47:40.188 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username that are unregistered method
+2021-04-13 23:47:40.189 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:47:43.783 [main] INFO  com.flipkart.dao.AuthenticationOperations - Modifying the user type
+2021-04-13 23:47:43.784 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-13 23:47:43.785 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-13 23:47:43.785 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
+2021-04-14 08:25:22.581 [main] INFO  com.flipkart.client.Runner - About to initialize
+2021-04-14 08:25:22.614 [main] INFO  com.flipkart.utils.DB - make connection method
+2021-04-14 08:25:22.619 [main] INFO  com.flipkart.utils.DB - Connecting to database...
+2021-04-14 08:25:22.841 [main] INFO  com.flipkart.utils.DB - Connection has been made
+2021-04-14 08:25:22.841 [main] INFO  com.flipkart.utils.Initializer - initialization with DB connection complete
+2021-04-14 08:25:22.857 [main] INFO  com.flipkart.client.Runner - About to go to Main Menu
+2021-04-14 08:25:22.860 [main] INFO  com.flipkart.handler.UserHandler - At Main Menu
+2021-04-14 08:26:50.395 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-14 08:26:55.230 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-14 08:26:55.240 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:27:16.353 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-14 08:27:16.355 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-14 08:27:16.356 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-14 08:27:22.990 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-14 08:27:26.943 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-14 08:27:26.944 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:27:26.945 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-14 08:27:26.947 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:27:26.947 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-14 08:27:26.947 [main] INFO  com.flipkart.handler.UserHandler - case 3
+2021-04-14 08:28:01.572 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-14 08:28:04.496 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-14 08:28:04.497 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:28:06.314 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-14 08:28:06.315 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-14 08:28:06.316 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-14 08:28:14.988 [main] INFO  com.flipkart.handler.UserHandler - Choice: 2
+2021-04-14 08:28:16.750 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username method
+2021-04-14 08:28:16.751 [main] ERROR com.flipkart.dao.AuthenticationOperations - Column 'userame' not found.
+2021-04-14 08:28:16.751 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:28:18.284 [main] INFO  com.flipkart.dao.AuthenticationOperations - register NewUser method
+2021-04-14 08:28:18.286 [main] ERROR com.flipkart.dao.AuthenticationOperations - Duplicate entry 'admin' for key 'PRIMARY'
+2021-04-14 08:28:18.286 [main] INFO  com.flipkart.dao.AuthenticationOperations - addNewUserToLoginMap method
+2021-04-14 08:28:18.287 [main] INFO  com.flipkart.handler.UserHandler - New User Handler part complete
+2021-04-14 08:28:25.900 [main] INFO  com.flipkart.handler.UserHandler - Choice: 1
+2021-04-14 08:28:31.033 [main] INFO  com.flipkart.dao.AuthenticationOperations - LoginAccess method
+2021-04-14 08:28:31.033 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:28:31.034 [main] INFO  com.flipkart.dao.AuthenticationOperations - Login Map access method
+2021-04-14 08:28:31.034 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:28:31.034 [main] INFO  com.flipkart.handler.UserHandler - Authentication complete
+2021-04-14 08:28:31.034 [main] INFO  com.flipkart.handler.UserHandler - case 0
+2021-04-14 08:28:31.035 [main] INFO  com.flipkart.handler.AdminHandler - At AdminMenu
+2021-04-14 08:29:15.841 [main] INFO  com.flipkart.service.NewUserRegistrationSystem - Perusing Students that may be unregistered
+2021-04-14 08:29:15.841 [main] INFO  com.flipkart.dao.AuthenticationOperations - getSpecific username that are unregistered method
+2021-04-14 08:29:15.842 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:29:31.149 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginMap
+2021-04-14 08:29:31.151 [main] INFO  com.flipkart.dao.AuthenticationOperations - Removing user from loginDetails
+2021-04-14 08:29:44.058 [main] INFO  com.flipkart.dao.AuthenticationOperations - Modifying the user type
+2021-04-14 08:29:44.060 [main] INFO  com.flipkart.dao.AuthenticationOperations - Get username from StudentId method
+2021-04-14 08:29:44.060 [main] INFO  com.flipkart.dao.AuthenticationOperations - Closed rs
+2021-04-14 08:29:44.075 [main] INFO  com.flipkart.dao.NotificationSystemDBOperations - add Notification method
